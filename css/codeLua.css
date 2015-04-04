@@ -1,0 +1,122 @@
+/*
+
+Style with support for rainbow parens
+
+*/
+/* line 7, ../scss/codeLua.scss */
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  /*    background: rgba(0,0,0,.4);*/
+  color: #d1d9e1;
+}
+
+/* line 16, ../scss/codeLua.scss */
+.hljs-body, .hljs-collection {
+  color: #d1d9e1;
+}
+
+/* line 21, ../scss/codeLua.scss */
+.hljs-comment, .hljs-template_comment, .diff .hljs-header, .hljs-doctype, .lisp .hljs-string, .hljs-javadoc {
+  color: #26334b;
+  font-style: italic;
+}
+
+/* line 26, ../scss/codeLua.scss */
+.hljs-keyword,
+.clojure .hljs-attribute,
+.hljs-winutils,
+.javascript .hljs-title,
+.hljs-addition,
+.css .hljs-tag {
+  color: #ffa800;
+  background-color: green;
+}
+
+/* line 36, ../scss/codeLua.scss */
+.hljs-number {
+  color: #fe286f;
+}
+
+/* line 39, ../scss/codeLua.scss */
+.hljs-command,
+.hljs-string,
+.hljs-tag .hljs-value,
+.hljs-phpdoc,
+.tex .hljs-formula,
+.hljs-regexp,
+.hljs-hexcolor {
+  color: #8abeb7;
+}
+
+/* line 49, ../scss/codeLua.scss */
+.hljs-title,
+.hljs-localvars,
+.hljs-function .hljs-title,
+.hljs-chunk,
+.hljs-decorator,
+.hljs-built_in,
+.lisp .hljs-title,
+.hljs-identifier {
+  color: #0084ff;
+}
+
+/* line 60, ../scss/codeLua.scss */
+.hljs-class .hljs-keyword {
+  color: #f2777a;
+}
+
+/* line 64, ../scss/codeLua.scss */
+.hljs-variable,
+.lisp .hljs-body,
+.smalltalk .hljs-number,
+.hljs-constant,
+.hljs-class .hljs-title,
+.hljs-parent,
+.haskell .hljs-label,
+.hljs-id,
+.lisp .hljs-title,
+.clojure .hljs-title .hljs-built_in {
+  color: #0084ff;
+}
+
+/* line 77, ../scss/codeLua.scss */
+.hljs-tag .hljs-title,
+.hljs-rules .hljs-property,
+.django .hljs-tag .hljs-keyword,
+.clojure .hljs-title .hljs-built_in {
+  font-weight: bold;
+}
+
+/* line 84, ../scss/codeLua.scss */
+.hljs-attribute,
+.clojure .hljs-title {
+  color: #81a2be;
+}
+
+/* line 89, ../scss/codeLua.scss */
+.hljs-preprocessor,
+.hljs-pragma,
+.hljs-pi,
+.hljs-shebang,
+.hljs-symbol,
+.hljs-symbol .hljs-string,
+.diff .hljs-change,
+.hljs-special,
+.hljs-attr_selector,
+.hljs-important,
+.hljs-subst,
+.hljs-cdata {
+  color: #f99157;
+}
+
+/* line 104, ../scss/codeLua.scss */
+.hljs-deletion {
+  color: #dc322f;
+}
+
+/* line 108, ../scss/codeLua.scss */
+.tex .hljs-formula {
+  background: #eee8d5;
+}

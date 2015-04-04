@@ -1,0 +1,504 @@
+/* line 1, ../scss/bw.scss */
+.color0 {
+  color: #ffffff;
+}
+
+/* line 4, ../scss/bw.scss */
+.color1 {
+  color: #f2f2f2;
+}
+
+/* line 8, ../scss/bw.scss */
+.color2 {
+  color: #f0f0f0;
+}
+
+/* line 12, ../scss/bw.scss */
+.color3 {
+  color: #ededed;
+}
+
+/* line 16, ../scss/bw.scss */
+.color4 {
+  color: #ebebeb;
+}
+
+/* line 20, ../scss/bw.scss */
+.color5 {
+  color: #e8e8e8;
+}
+
+/* line 24, ../scss/bw.scss */
+.color6 {
+  color: #e6e6e6;
+}
+
+/* line 28, ../scss/bw.scss */
+.color7 {
+  color: #e3e3e3;
+}
+
+/* line 32, ../scss/bw.scss */
+.color8 {
+  color: #e1e1e1;
+}
+
+/* line 36, ../scss/bw.scss */
+.color9 {
+  color: #dedede;
+}
+
+/* line 40, ../scss/bw.scss */
+.color10 {
+  color: #dcdcdc;
+}
+
+/* line 44, ../scss/bw.scss */
+.color11 {
+  color: #dadada;
+}
+
+/* line 48, ../scss/bw.scss */
+.color12 {
+  color: #d7d7d7;
+}
+
+/* line 52, ../scss/bw.scss */
+.color13 {
+  color: #d5d5d5;
+}
+
+/* line 56, ../scss/bw.scss */
+.color14 {
+  color: #d2d2d2;
+}
+
+/* line 60, ../scss/bw.scss */
+.color15 {
+  color: #d0d0d0;
+}
+
+/* line 64, ../scss/bw.scss */
+.color16 {
+  color: #cdcdcd;
+}
+
+/* line 68, ../scss/bw.scss */
+.color17 {
+  color: #cbcbcb;
+}
+
+/* line 72, ../scss/bw.scss */
+.color18 {
+  color: #c8c8c8;
+}
+
+/* line 76, ../scss/bw.scss */
+.color19 {
+  color: #c6c6c6;
+}
+
+/* line 80, ../scss/bw.scss */
+.color20 {
+  color: #c4c4c4;
+}
+
+/* line 84, ../scss/bw.scss */
+.color21 {
+  color: #c1c1c1;
+}
+
+/* line 88, ../scss/bw.scss */
+.color22 {
+  color: #bfbfbf;
+}
+
+/* line 92, ../scss/bw.scss */
+.color23 {
+  color: #bcbcbc;
+}
+
+/* line 96, ../scss/bw.scss */
+.color24 {
+  color: #bababa;
+}
+
+/* line 100, ../scss/bw.scss */
+.color25 {
+  color: #b7b7b7;
+}
+
+/* line 104, ../scss/bw.scss */
+.color26 {
+  color: #b5b5b5;
+}
+
+/* line 108, ../scss/bw.scss */
+.color27 {
+  color: #b2b2b2;
+}
+
+/* line 112, ../scss/bw.scss */
+.color28 {
+  color: #b0b0b0;
+}
+
+/* line 116, ../scss/bw.scss */
+.color29 {
+  color: #aeaeae;
+}
+
+/* line 120, ../scss/bw.scss */
+.color30 {
+  color: #ababab;
+}
+
+/* line 124, ../scss/bw.scss */
+.color31 {
+  color: #a9a9a9;
+}
+
+/* line 128, ../scss/bw.scss */
+.color32 {
+  color: #a6a6a6;
+}
+
+/* line 132, ../scss/bw.scss */
+.color33 {
+  color: #a4a4a4;
+}
+
+/* line 136, ../scss/bw.scss */
+.color34 {
+  color: #a1a1a1;
+}
+
+/* line 140, ../scss/bw.scss */
+.color35 {
+  color: #9f9f9f;
+}
+
+/* line 144, ../scss/bw.scss */
+.color36 {
+  color: #9c9c9c;
+}
+
+/* line 148, ../scss/bw.scss */
+.color37 {
+  color: #9a9a9a;
+}
+
+/* line 152, ../scss/bw.scss */
+.color38 {
+  color: #989898;
+}
+
+/* line 156, ../scss/bw.scss */
+.color39 {
+  color: #959595;
+}
+
+/* line 160, ../scss/bw.scss */
+.color40 {
+  color: #939393;
+}
+
+/* line 164, ../scss/bw.scss */
+.color41 {
+  color: #909090;
+}
+
+/* line 168, ../scss/bw.scss */
+.color42 {
+  color: #8e8e8e;
+}
+
+/* line 172, ../scss/bw.scss */
+.color43 {
+  color: #8b8b8b;
+}
+
+/* line 176, ../scss/bw.scss */
+.color44 {
+  color: #898989;
+}
+
+/* line 180, ../scss/bw.scss */
+.color45 {
+  color: #868686;
+}
+
+/* line 184, ../scss/bw.scss */
+.color46 {
+  color: #848484;
+}
+
+/* line 188, ../scss/bw.scss */
+.color47 {
+  color: #828282;
+}
+
+/* line 192, ../scss/bw.scss */
+.color48 {
+  color: #7f7f7f;
+}
+
+/* line 196, ../scss/bw.scss */
+.color49 {
+  color: #7d7d7d;
+}
+
+/* line 200, ../scss/bw.scss */
+.color50 {
+  color: #7a7a7a;
+}
+
+/* line 204, ../scss/bw.scss */
+.color51 {
+  color: #787878;
+}
+
+/* line 208, ../scss/bw.scss */
+.color52 {
+  color: #757575;
+}
+
+/* line 212, ../scss/bw.scss */
+.color53 {
+  color: #737373;
+}
+
+/* line 216, ../scss/bw.scss */
+.color54 {
+  color: #707070;
+}
+
+/* line 220, ../scss/bw.scss */
+.color55 {
+  color: #6e6e6e;
+}
+
+/* line 224, ../scss/bw.scss */
+.color56 {
+  color: #6c6c6c;
+}
+
+/* line 228, ../scss/bw.scss */
+.color57 {
+  color: #696969;
+}
+
+/* line 232, ../scss/bw.scss */
+.color58 {
+  color: #676767;
+}
+
+/* line 236, ../scss/bw.scss */
+.color59 {
+  color: #646464;
+}
+
+/* line 240, ../scss/bw.scss */
+.color60 {
+  color: #626262;
+}
+
+/* line 244, ../scss/bw.scss */
+.color61 {
+  color: #5f5f5f;
+}
+
+/* line 248, ../scss/bw.scss */
+.color62 {
+  color: #5d5d5d;
+}
+
+/* line 252, ../scss/bw.scss */
+.color63 {
+  color: #5a5a5a;
+}
+
+/* line 256, ../scss/bw.scss */
+.color64 {
+  color: #585858;
+}
+
+/* line 260, ../scss/bw.scss */
+.color65 {
+  color: #565656;
+}
+
+/* line 264, ../scss/bw.scss */
+.color66 {
+  color: #535353;
+}
+
+/* line 268, ../scss/bw.scss */
+.color67 {
+  color: #515151;
+}
+
+/* line 272, ../scss/bw.scss */
+.color68 {
+  color: #4e4e4e;
+}
+
+/* line 276, ../scss/bw.scss */
+.color69 {
+  color: #4c4c4c;
+}
+
+/* line 280, ../scss/bw.scss */
+.color70 {
+  color: #494949;
+}
+
+/* line 284, ../scss/bw.scss */
+.color71 {
+  color: #474747;
+}
+
+/* line 288, ../scss/bw.scss */
+.color72 {
+  color: #444444;
+}
+
+/* line 292, ../scss/bw.scss */
+.color73 {
+  color: #424242;
+}
+
+/* line 296, ../scss/bw.scss */
+.color74 {
+  color: #404040;
+}
+
+/* line 300, ../scss/bw.scss */
+.color75 {
+  color: #3d3d3d;
+}
+
+/* line 304, ../scss/bw.scss */
+.color76 {
+  color: #3b3b3b;
+}
+
+/* line 308, ../scss/bw.scss */
+.color77 {
+  color: #383838;
+}
+
+/* line 312, ../scss/bw.scss */
+.color78 {
+  color: #363636;
+}
+
+/* line 316, ../scss/bw.scss */
+.color79 {
+  color: #333333;
+}
+
+/* line 320, ../scss/bw.scss */
+.color80 {
+  color: #313131;
+}
+
+/* line 324, ../scss/bw.scss */
+.color81 {
+  color: #2e2e2e;
+}
+
+/* line 328, ../scss/bw.scss */
+.color82 {
+  color: #2c2c2c;
+}
+
+/* line 332, ../scss/bw.scss */
+.color83 {
+  color: #2a2a2a;
+}
+
+/* line 336, ../scss/bw.scss */
+.color84 {
+  color: #272727;
+}
+
+/* line 340, ../scss/bw.scss */
+.color85 {
+  color: #252525;
+}
+
+/* line 344, ../scss/bw.scss */
+.color86 {
+  color: #222222;
+}
+
+/* line 348, ../scss/bw.scss */
+.color87 {
+  color: #202020;
+}
+
+/* line 352, ../scss/bw.scss */
+.color88 {
+  color: #1d1d1d;
+}
+
+/* line 356, ../scss/bw.scss */
+.color89 {
+  color: #1b1b1b;
+}
+
+/* line 360, ../scss/bw.scss */
+.color90 {
+  color: #181818;
+}
+
+/* line 364, ../scss/bw.scss */
+.color91 {
+  color: #161616;
+}
+
+/* line 368, ../scss/bw.scss */
+.color92 {
+  color: #141414;
+}
+
+/* line 372, ../scss/bw.scss */
+.color93 {
+  color: #111111;
+}
+
+/* line 376, ../scss/bw.scss */
+.color94 {
+  color: #0f0f0f;
+}
+
+/* line 380, ../scss/bw.scss */
+.color95 {
+  color: #0c0c0c;
+}
+
+/* line 384, ../scss/bw.scss */
+.color96 {
+  color: #0a0a0a;
+}
+
+/* line 388, ../scss/bw.scss */
+.color97 {
+  color: #070707;
+}
+
+/* line 392, ../scss/bw.scss */
+.color98 {
+  color: #050505;
+}
+
+/* line 396, ../scss/bw.scss */
+.color99 {
+  color: #020202;
+}
+
+/* line 400, ../scss/bw.scss */
+.color100 {
+  color: #000000;
+}

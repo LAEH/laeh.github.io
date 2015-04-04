@@ -1,0 +1,210 @@
+html
+    head
+    meta(charset='utf-8')
+    meta(name="format-detection" content="telephone=no")
+    meta(name="apple-mobile-web-app-capable" content="yes")
+    meta(name="apple-mobile-web-app-status-bar-style" content="black-translucent")
+    meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1")
+    link(rel="stylesheet" type="text/css" href="css/screen.css")
+    //- meta(name="apple-mobile-web-app-status-bar-style" content="rgba(0,0,0,.7)")
+
+    //- Libs
+    script(type="text/javascript" src="js/underscore.min.js")
+    script(type="text/javascript" src="js/jquery-1.11.0.min.js")
+    script(type="text/javascript" src="js/highlight.min.js")
+    script(type="text/javascript" src="js/highlight.lua.min.js")
+    link(rel="stylesheet" type="text/css" href="css/font/black-tie/css/black-tie.min.css")
+
+    //- Home JS
+    script(type="text/javascript" src="js/mad.js")
+    script(type="text/javascript" src="js/hue.js")
+    script(type="text/javascript" src="js/dim.js")
+    script(type="text/javascript" src="js/display_modules.js")
+    script(type="text/javascript" src="assets/myDummyJSON.js")
+
+    title LAEH
+    body
+        .viewport
+            .screen
+                #display
+                    .content
+                        .slideshow
+                #menu
+                    #modes
+                        .btn.active&attributes({'data-mode': 'slide'}) SLIDE
+                        .btn.inactive&attributes({'data-mode': 'scroll'}) SCROLL
+                    #tags
+                        .btn.tag.active&attributes({'data-id': 'all'}) ALL
+                        .btn.tag.inactive&attributes({'data-id': 'analog'}) ANALOG
+                        .btn.tag.inactive&attributes({'data-id': 'digital'}) DIGITAL
+                        .btn.tag.inactive&attributes({'data-id': 'processed'}) PROCESSED
+                        .vspacing
+                        .btn.tag.inactive&attributes({'data-id': 'artwork'}) ARTWORK
+                        .btn.tag.inactive&attributes({'data-id': 'artwork'}) CLASSES
+                        .btn.tag.inactive&attributes({'data-id': 'artwork'}) ARTO
+                        .vspacing
+                        .btn.tag.inactive&attributes({'data-id': 'all'}) BEIJING
+                        .btn.tag.inactive&attributes({'data-id': 'all'}) NYC
+                        .btn.tag.inactive&attributes({'data-id': 'all'}) PARIS
+                        .btn.tag.inactive&attributes({'data-id': 'all'}) MERIDA
+                        .btn.tag.inactive&attributes({'data-id': 'all'}) LONDON
+                        .vspacing
+                    #colors
+                        .btn.tag.yellow.color&attributes({'data-id':'yellow'})
+                            .left
+                            .right
+                        .btn.tag.orange.color&attributes({'data-id':'orange'})
+                            .left
+                            .right
+                        .btn.tag.red.color&attributes({'data-id':'red'})
+                            .left
+                            .right
+                        .btn.tag.pink.color&attributes({'data-id':'pink'})
+                            .left
+                            .right
+                        .btn.tag.blue.color&attributes({'data-id':'blue'})
+                            .left
+                            .right
+                        .btn.tag.cyan.color&attributes({'data-id':'cyan'})
+                            .left
+                            .right
+                        .btn.tag.green.color&attributes({'data-id':'green'})
+                            .left
+                            .right
+                        .btn.tag.black.color&attributes({'data-id':'black'})
+                            .left
+                            .right
+            #name Louis-Alexandre Etezad-Heydari
+            #mask
+
+    script(type='text/javascript').
+        $(document).ready(function() {
+
+            //- ╔══════════════════════════════════════════╗
+            //- ║                                          ║
+            //- ╚══════════════════════════════════════════╝
+            var docw = $('body').width();
+            var doch = $('body').height();
+            var displayRatio = docw / doch;
+            console.log(docw,doch,displayRatio)
+
+            if (docw > 1024){
+                console.log('YES docw < 1024')
+                $('#mask').addClass('hidden')
+
+            }
+
+            //- ╔══════════════════════════════════════════╗
+            //- ║                                          ║
+            //- ╚══════════════════════════════════════════╝
+
+            var s = '1000'
+            //- MIN & MAX
+            var w = $('.slideshow').width()
+            var h = $('.slideshow').height()
+            if ( w  < 400  || doch < 400  ){  s = '400';}
+            if ( w  > 1000 || w  > 1000 ){ s = '1000';}
+
+            if ( (w  > 400 && w <600)   || (w  > 400 && w  <600) )   { s = '600';}
+            if ( (w  > 600 && w <800)   || (w  > 600 && w  <800) )   { s = '800';}
+            if ( (w  > 800 && w <1000)  || (w  > 800 && w  <1000) )  { s = '1000';}
+
+            var baseUrl = 'https://dl.dropboxusercontent.com/u/233335115/images/laeh.io/set/' + s + '/';
+            var ext = '.jpg';
+
+            // Format imagesMap generation
+            for (var key in imagesMap) {
+                var urls = [];
+                for(var i = 0; i < imagesMap[key].length; i++) {
+                    // an image id is 4 characters (ex: 00001, 00099)
+                    var nZero = 5 - imagesMap[key][i].toString().length;
+                    var nZero = 0
+
+                    var url = '';
+                    for(var z = 0; z < nZero; z++) {
+                        url += '0';
+                    }
+                    url += imagesMap[key][i];
+
+                    urls.push(baseUrl + url + ext);
+                }
+                imagesMap[key] = urls;
+            }
+
+            //- ╔══════════════════════════════════════════╗
+            //- ║                                          ║
+            //- ╚══════════════════════════════════════════╝
+
+            var mySlideshow = new Display.slideshow({
+                'images': [],
+                'slideDuration': 5000,
+                '$container': $('.slideshow')
+            });
+
+             var myScroll = new Display.scroll({
+                'images': [],
+                '$container': $('.slideshow')
+            });
+
+            // Load a new tag
+            $('.tag').click(function(e) {
+                e.stopPropagation();
+
+                $('.tag').removeClass('active');
+                $(this).addClass('active');
+
+                var id = $(this).data('id');
+                if(id) {
+                    loadTag(id);
+                }
+            });
+
+            function loadTag(id) {
+                currentTag = id || currentTag;
+
+                if(currentMode === 'slide') {
+                    mySlideshow.update(imagesMap[currentTag]);
+                    mySlideshow.reset();
+                    mySlideshow.render();
+                    mySlideshow.start();
+                } else {
+                    myScroll.update(imagesMap[currentTag]);
+                    myScroll.reset();
+                    myScroll.render();
+                    myScroll.start();
+                }
+            };
+
+            // Change the mode for the current tag
+            $('#modes .btn').click(function(e) {
+                e.stopPropagation();
+
+                var mode = $(this).data('mode');
+                if(mode != currentMode) {
+                    currentMode = mode;
+                    loadTag();
+                }
+            });
+
+            var currentTag = Object.keys(imagesMap)[0]; // default tag is first
+            var currentMode = 'slide'; // default mode is slideshow
+
+            //- var currentMode = 'scroll';
+
+            // Load the first tag with the default mode
+            loadTag();
+
+            //- ╔══════════════════════════════════════════╗
+            //- ║                                          ║
+            //- ╚══════════════════════════════════════════╝
+
+            $('.warning').click(function() {
+                console.log('warning clicked')
+                $('.warning').toggleClass('hidden');
+            });
+
+            $('.menu').click(function() {
+                console.log('menu clicker')
+                $('.menu').toggleClass('hidden');
+            });
+        });

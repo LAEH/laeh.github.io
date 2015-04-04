@@ -1,0 +1,378 @@
+
+@import "compass/reset";
+@import "compass/css3";
+
+
+/*
+╔══════════════════════════════════════════╗
+║                                          ║
+╚══════════════════════════════════════════╝
+*/
+body, html {
+   text-align: center;
+   top: 0;
+   left: 0 ;
+   width:  100%;
+   height: 100%;
+
+   font-smoothing: antialiased;
+   -webkit-font-smoothing:subpixel-antialiased;
+   -webkit-font-smoothing: antialiased;
+
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+   font-weight: 300;
+   text-rendering: optimizeLegibility;
+}
+
+*,
+*:before,
+*:after {
+   @include box-sizing(border-box);
+   padding: 0;
+   margin: 0;
+   -webkit-tap-highlight-color: rgba(0,0,0,0);
+   -moz-tap-highlight-color: rgba(0,0,0,0);
+}
+
+form, input, textarea, div, span,ul,li, i, p, a, :link, :visited {
+    text-align: center;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+$tb:45px;
+$base: #fff;
+$contrast: #111;
+$br:0px;
+$m:0px;
+// $testcolor: $blue;
+$testcolor: transparent;
+$menu:160px;
+$blur:0px;
+$h : 100%;
+$w : 100%;
+
+// #0E7FFB
+$violet        :#530ff5;
+$cyan          :#2cbae7;
+$green         :#65b11a;
+$pink          :#fe2973;
+// #FE4A65
+$orange        :#ffa502;
+$red           :#ff5533;
+$yellow        :#FFD52E;
+$grey          :#9fa0a4;
+$black         :#000000;
+$lightblue     :#65d0fc;
+$blue          :#157efb;
+$white         :#ffffff;
+$black         :#000000;
+$violet01      :#e3f9fd;
+$cyan01        :#cbebf5;
+$green01       :#f0f7ee;
+$pink01        :#fcf1f4;
+$orange      :#FFA500;
+$red01         :#ffeeeb;
+$yellow01      :#fffbe6;
+$grey01        :#f6f6f6;
+$black01       :#ffffff;
+$lightblue01   :#f0fbff;
+$blue01        :#eaf3ff;
+$white01       :#000000;
+$black01       :#ffffff;
+
+$light   : #f2f2f2;
+$blue    : #3F54D1;
+$night   : #000024;
+$dark    : #000d1f;
+$night3  : #011225;
+$night2  : #0D1218;
+$night1  : #061220;
+
+$base       : #ffffff;
+$base01     : #cccccc;
+$base02     : #888888;
+$base03     : #333333;
+
+
+
+.img {
+   -webkit-filter:blur(0px);
+   &:hover {
+      cursor: pointer;
+   }
+
+   &.blur{
+     -webkit-filter:blur(12px);
+   }
+}
+
+
+@mixin ontouch {
+    @include transition-property(opacity);
+    @include transition-duration(.1s);
+    @include transition-timing-function(ease);
+    &:active {
+        opacity: .6;
+        @include transition-property(opacity);
+        @include transition-duration(.1s);
+        @include transition-timing-function(ease);
+   }
+}
+
+@mixin anim-slow {
+    @include transition-property(all);
+    @include transition-duration(1s);
+    @include transition-timing-function(ease);
+}
+
+@mixin anim-medium($property: all) {
+    @include transition-property($property);
+    @include transition-duration(.3s);
+    @include transition-timing-function(ease);
+}
+
+@mixin anim-fast {
+    @include transition-property(all);
+    @include transition-duration(.15s);
+    @include transition-timing-function(ease);
+}
+
+@mixin translate3d ($x, $y, $z) {
+    -webkit-transform: translate3d($x, $y, $z);
+    -moz-transform: translate3d($x, $y, $z);
+    -o-transform: translate3d($x, $y, $z);
+    -ms-transform: translate3d($x, $y, $z);
+    transform: translate3d($x, $y, $z);
+}
+
+@mixin absolute_fill {
+   position: absolute;
+   height:  100%;
+   width:   100%;
+   top:     0;
+   left:    0;
+}
+
+@mixin relative_fill {
+   position: relative;
+   height:  100%;
+   width:   100%;
+   top:     0;
+   left:    0;
+}
+
+@mixin fixed_fill {
+   position: fixed;
+   height:  100%;
+   width:   100%;
+   top:     0;
+   left:    0;
+}
+
+
+@mixin img-contain () {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+@mixin img-cover() {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@mixin bp($point) {
+   $bp-s: "(max-width: 960px)";
+   $bp-m: "(max-width: 1250px)";
+   $bp-l: "(max-width: 1600px)";
+
+   @if $point == s {
+      @media #{$bp-s} { @content; }
+   }
+   @else if $point == m {
+      @media #{$bp-m} { @content; }
+   }
+   @else if $point == l {
+      @media #{$bp-l}  { @content; }
+   }
+}
+
+@mixin reflow($breakPoint) {
+  $mobile: "(max-width: 768px)";
+  $tablet: "(max-width: 1024px)";
+
+  @if $breakPoint == mobile {
+    @media #{$mobile} { @content; }
+  }
+  @else if $breakPoint == tablet {
+    @media #{$tablet} { @content; }
+  }
+  @else if $breakPoint == laptop {
+    @media #{$laptop}  { @content; }
+  }
+}
+
+@mixin img-contain ($path) {
+  background-image : url($path);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+@mixin img-cover($path) {
+    background-image : url($path);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@mixin br ( $tl, $tr, $br, $bl ) {
+    @include border-radius (
+      $tl * 1px
+      $tr * 1px
+      $br * 1px
+      $bl * 1px
+    )
+}
+
+// -webkit-filter:blur(6px);
+
+@font-face {font-family:"Din-regular";src: url(../font/din.woff)}
+@font-face {font-family:"Din-Bold";src: url(../font/din-Bold.woff)}
+@font-face {font-family:"Din-Light";src: url(../font/din-Light.woff)}
+@font-face {font-family:"Din-Blak";src: url(../font/din-Black.woff)}
+@font-face {font-family:"Din-Medium";src: url(../font/din-Medium.woff)}
+@font-face {font-family:"Din-BoldIta";src: url(../font/din-BoldIta.woff)}
+@font-face {font-family:"Din-LightIta";src: url(../font/din-LightIta.woff)}
+@font-face {font-family:"Din-MediumIta";src: url(../font/din-MediumIta.woff)}
+@font-face {font-family:"Din-CondMedium";src: url(../font/din-CondMedium.woff)}
+
+$bold : 'Din-Bold';
+$blak : 'Din-Blak';
+$light : 'Din-Light';
+$medium : 'Din-Medium';
+$regular : 'Din-regular';
+$boldita : 'Din-BoldIta';
+$lightita : 'Din-LightIta';
+$mediumita : 'Din-MediumIta';
+$condmedium : 'Din-CondMedium';
+
+@mixin bold($s){font-family:$bold;font-size: $s}
+@mixin light($s){font-family:$light;font-size: $s}
+@mixin blak($s){font-family:$blak;font-size: $s}
+@mixin medium($s){font-family:$medium;font-size: $s}
+@mixin boldita($s){font-family:$boldita;font-size: $s}
+@mixin regular($s){font-family:$regular;font-size: $s}
+@mixin lightita($s){font-family:$lightita;font-size: $s}
+@mixin mediumita($s){font-family:$mediumita;font-size: $s}
+@mixin condmedium($s){font-family:$condmedium;font-size: $s}
+
+
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen
+and (min-width : 321px) {
+
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen
+and (max-width : 320px) {
+
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+
+}
+
+/* iPads (landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+
+}
+
+/* iPads (portrait) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+
+}
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 1224px) {
+
+}
+
+/* Large screens ----------- */
+@media only screen
+and (min-width : 1824px) {
+
+}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+
+}
+
+
+// Very Large 800 pixels
+// Large 500 or 520 pixels
+// Medium 460 pixels
+// Medium-Small 320 pixels
+// Small 240 pixels
+// Thumbnail 100 pixels
+// Square Thumb 75 pixels
+// Bob Ulrich Chairman and CEO Target Corporation
+
+// Image Sizes
+// Video Image Sizes
+// Viddler 437 x 370
+// Youtube 425 x 355
+// Photo Image Sizes
+
+
+// 1024 x 768 ratio: 1.33
+// 800 x 600 ratio: 1.33
+// 640 x 428
+// 460 x 308 ratio: 1.49 **
+// 320 x 240 ratio: 1.33  **
+// 240 x 160 ratio: 1.5 **
+// 220 x 148 ratio: 1.49 **
+// Thumbnail Image Sizes
+// 160 x 160 ratio: 1 **
+// 160 x 108 ratio: 1.49 **
+// 160 x 120 ratio: 1.33
+// 120 x 80 ratio: 1.5
+// 100 x 100 ratio: 1
+// 75 x 75 ratio: 1
+
+// 320
+// 480
+// 640
+// 800
+// 1024
+// 1200
+// 1600

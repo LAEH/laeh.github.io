@@ -1,0 +1,1044 @@
+@charset "UTF-8";
+/* line 5, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 5, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/*
+╔══════════════════════════════════════════╗
+║                                          ║
+╚══════════════════════════════════════════╝
+*/
+/* line 11, ../scss/_base.scss */
+body, html {
+  text-align: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -webkit-font-smoothing: antialiased;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+  text-rendering: optimizeLegibility;
+}
+
+/* line 27, ../scss/_base.scss */
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  -webkit-tap-highlight-color: transparent;
+  -moz-tap-highlight-color: transparent;
+}
+
+/* line 37, ../scss/_base.scss */
+form, input, textarea, div, span, ul, li, i, p, a, :link, :visited {
+  text-align: center;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+/* line 103, ../scss/_base.scss */
+.img {
+  -webkit-filter: blur(0px);
+}
+/* line 105, ../scss/_base.scss */
+.img:hover {
+  cursor: pointer;
+}
+/* line 109, ../scss/_base.scss */
+.img.blur {
+  -webkit-filter: blur(12px);
+}
+
+@font-face {
+  font-family: "Din-regular";
+  src: url(../font/din.woff);
+}
+@font-face {
+  font-family: "Din-Bold";
+  src: url(../font/din-Bold.woff);
+}
+@font-face {
+  font-family: "Din-Light";
+  src: url(../font/din-Light.woff);
+}
+@font-face {
+  font-family: "Din-Blak";
+  src: url(../font/din-Black.woff);
+}
+@font-face {
+  font-family: "Din-Medium";
+  src: url(../font/din-Medium.woff);
+}
+@font-face {
+  font-family: "Din-BoldIta";
+  src: url(../font/din-BoldIta.woff);
+}
+@font-face {
+  font-family: "Din-LightIta";
+  src: url(../font/din-LightIta.woff);
+}
+@font-face {
+  font-family: "Din-MediumIta";
+  src: url(../font/din-MediumIta.woff);
+}
+@font-face {
+  font-family: "Din-CondMedium";
+  src: url(../font/din-CondMedium.woff);
+}
+/* Smartphones (portrait and landscape) ----------- */
+/* Smartphones (landscape) ----------- */
+/* Smartphones (portrait) ----------- */
+/* iPads (portrait and landscape) ----------- */
+/* iPads (landscape) ----------- */
+/* iPads (portrait) ----------- */
+/* Desktops and laptops ----------- */
+/* Large screens ----------- */
+/* iPhone 4 ----------- */
+/*
+
+Style with support for rainbow parens
+
+*/
+/* line 7, ../scss/_code.scss */
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  /*    background: rgba(0,0,0,.4);*/
+  color: #d1d9e1;
+}
+
+/* line 16, ../scss/_code.scss */
+.hljs-body, .hljs-collection {
+  color: #9fa0a4;
+  font-size: 8px;
+}
+
+/* line 22, ../scss/_code.scss */
+.hljs-comment, .hljs-template_comment, .diff .hljs-header, .hljs-doctype, .lisp .hljs-string, .hljs-javadoc {
+  color: #26334b;
+  font-style: italic;
+}
+
+/* line 27, ../scss/_code.scss */
+.hljs-keyword,
+.clojure .hljs-attribute,
+.hljs-winutils,
+.javascript .hljs-title,
+.hljs-addition,
+.css .hljs-tag {
+  color: #ffffff;
+  font-weight: 900;
+}
+
+/* line 37, ../scss/_code.scss */
+.hljs-number {
+  color: #fe286f;
+}
+
+/* line 40, ../scss/_code.scss */
+.hljs-command,
+.hljs-string,
+.hljs-tag .hljs-value,
+.hljs-phpdoc,
+.tex .hljs-formula,
+.hljs-regexp,
+.hljs-hexcolor {
+  color: #FFD52E;
+  font-weight: 700;
+}
+
+/* line 51, ../scss/_code.scss */
+.hljs-title,
+.hljs-localvars,
+.hljs-function .hljs-title,
+.hljs-chunk,
+.hljs-decorator,
+.hljs-built_in,
+.lisp .hljs-title,
+.hljs-identifier {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+/* line 63, ../scss/_code.scss */
+.hljs-class .hljs-keyword {
+  color: #ffffff;
+  font-style: italic !important;
+  font-weight: 300 !important;
+}
+
+/* line 69, ../scss/_code.scss */
+.hljs-variable,
+.lisp .hljs-body,
+.smalltalk .hljs-number,
+.hljs-constant,
+.hljs-class .hljs-title,
+.hljs-parent,
+.haskell .hljs-label,
+.hljs-id,
+.lisp .hljs-title,
+.clojure .hljs-title .hljs-built_in {
+  color: #3F54D1;
+}
+
+/* line 82, ../scss/_code.scss */
+.hljs-tag .hljs-title,
+.hljs-rules .hljs-property,
+.django .hljs-tag .hljs-keyword,
+.clojure .hljs-title .hljs-built_in {
+  font-weight: bold;
+}
+
+/* line 89, ../scss/_code.scss */
+.hljs-attribute,
+.clojure .hljs-title {
+  color: #3F54D1;
+}
+
+/* line 94, ../scss/_code.scss */
+.hljs-preprocessor,
+.hljs-pragma,
+.hljs-pi,
+.hljs-shebang,
+.hljs-symbol,
+.hljs-symbol .hljs-string,
+.diff .hljs-change,
+.hljs-special,
+.hljs-attr_selector,
+.hljs-important,
+.hljs-subst,
+.hljs-cdata {
+  color: #65b11a;
+}
+
+/* line 109, ../scss/_code.scss */
+.hljs-deletion {
+  color: #dc322f;
+}
+
+/* line 113, ../scss/_code.scss */
+.tex .hljs-formula {
+  background: #eee8d5;
+}
+
+/*═══════════════╗
+║                ║
+╚═══════════════*/
+/* line 10, ../scss/screen.scss */
+.btn {
+  cursor: pointer;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -moz-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+  -webkit-transition-timing-function: ease;
+  transition-timing-function: ease;
+}
+/* line 13, ../scss/screen.scss */
+.btn:hover {
+  cursor: pointer;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -moz-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+  -webkit-transition-timing-function: ease;
+  transition-timing-function: ease;
+}
+
+/* line 19, ../scss/screen.scss */
+.viewport {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
+  -moz-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+  -webkit-transition-timing-function: ease;
+  transition-timing-function: ease;
+  border-radius: 0px;
+}
+
+/* line 30, ../scss/screen.scss */
+.screen {
+  display: inline-block;
+  position: relative;
+  margin-top: 60px;
+  width: 90%;
+  height: 80%;
+  max-width: 1100px;
+  max-height: 960px;
+  background-color: #ffffff;
+}
+@media (max-width: 768px) {
+  /* line 30, ../scss/screen.scss */
+  .screen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-radius: 0px;
+    height: calc(100% - 45px);
+  }
+}
+/* line 49, ../scss/screen.scss */
+.screen #display {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: calc(100% - 160px);
+  height: 100%;
+  background-color: transparent;
+}
+@media (max-width: 768px) {
+  /* line 49, ../scss/screen.scss */
+  .screen #display {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: calc(100% - 160px);
+  }
+}
+/* line 64, ../scss/screen.scss */
+.screen #display .content {
+  position: absolute;
+  top: calc(50% - 50%);
+  left: calc(50% - 50%);
+  width: 100%;
+  height: 100%;
+}
+/* line 70, ../scss/screen.scss */
+.screen #display .content img {
+  width: 100%;
+}
+
+/* line 78, ../scss/screen.scss */
+#screenSizeMask {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: block;
+  background-color: rgba(255, 255, 255, 0.96);
+}
+/* line 83, ../scss/screen.scss */
+#screenSizeMask.hidden {
+  display: none;
+}
+
+/* line 88, ../scss/screen.scss */
+#name {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 80px;
+  width: 160px;
+  padding-left: 10px;
+  padding-top: 6px;
+  padding-right: 10px;
+  font-size: 9px;
+  line-height: 9px;
+  font-family: "Din-regular";
+  background-color: rgba(0, 0, 0, 0.6);
+  background-color: #111116;
+  border-bottom-right-radius: 3px;
+  color: white;
+}
+/* line 105, ../scss/screen.scss */
+#name .short, #name .short {
+  position: relative;
+  float: left;
+  width: 160px;
+}
+/* line 110, ../scss/screen.scss */
+#name .short {
+  line-height: 60px;
+  line-height: 40px;
+}
+@media (max-width: 768px) {
+  /* line 88, ../scss/screen.scss */
+  #name {
+    left: 0;
+    top: 80px;
+    border-radius: 0;
+    text-align: center;
+    position: absolute;
+    background-color: rgba(0, 0, 36, 0.8);
+    left: -60px;
+    margin: 0px;
+    transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+  }
+}
+
+/* line 136, ../scss/screen.scss */
+#menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 160px;
+  height: 100%;
+  border-radius: 0px;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -moz-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+  -webkit-transition-timing-function: ease;
+  transition-timing-function: ease;
+  background-color: transparent;
+}
+@media (max-width: 768px) {
+  /* line 136, ../scss/screen.scss */
+  #menu {
+    padding-top: 20px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 160px;
+  }
+}
+
+/* line 158, ../scss/screen.scss */
+#modes {
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 80px;
+  padding-left: 10px;
+  text-align: left;
+  background-color: transparent;
+}
+/* line 167, ../scss/screen.scss */
+#modes .btn {
+  position: relative;
+  float: left;
+  width: auto;
+  margin: 2px;
+  padding: 6px 10px 4px 10px;
+  font-size: 9px;
+  line-height: 9px;
+  font-family: "Din-CondMedium";
+  border-radius: 3px;
+  background-color: transparent;
+  border: solid 1px black;
+  background-color: black;
+  color: white;
+}
+/* line 182, ../scss/screen.scss */
+#modes .btn.active {
+  background-color: black;
+  color: white;
+}
+@media (max-width: 768px) {
+  /* line 158, ../scss/screen.scss */
+  #modes {
+    position: absolute;
+    right: 0;
+    height: 100%;
+  }
+}
+
+/* line 196, ../scss/screen.scss */
+#tags {
+  position: relative;
+  display: block;
+  float: left;
+  width: 160px;
+  text-align: left;
+  background-color: transparent;
+}
+@media (max-width: 768px) {
+  /* line 196, ../scss/screen.scss */
+  #tags {
+    margin-top: 0px;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+/* line 212, ../scss/screen.scss */
+#tags .vspacing {
+  position: relative;
+  display: inline-block;
+  height: 32px;
+  width: 100%;
+}
+@media (max-width: 768px) {
+  /* line 212, ../scss/screen.scss */
+  #tags .vspacing {
+    height: 0;
+  }
+}
+/* line 222, ../scss/screen.scss */
+#tags .btn {
+  position: relative;
+  float: left;
+  text-align: right;
+  width: 160px;
+  font-size: 10px;
+  line-height: 12px;
+  padding-right: 40px;
+  font-family: "Din-Light";
+  border: solid 1px transparent;
+  border-radius: 3px;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -moz-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+  -webkit-transition-timing-function: ease;
+  transition-timing-function: ease;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -moz-transition-duration: 0.1s;
+  -o-transition-duration: 0.1s;
+  -webkit-transition-duration: 0.1s;
+  transition-duration: 0.1s;
+  -moz-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+  -webkit-transition-timing-function: ease;
+  transition-timing-function: ease;
+  cursor: pointer;
+  color: #676767;
+}
+/* line 119, ../scss/_base.scss */
+#tags .btn:active {
+  opacity: .6;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -moz-transition-duration: 0.1s;
+  -o-transition-duration: 0.1s;
+  -webkit-transition-duration: 0.1s;
+  transition-duration: 0.1s;
+  -moz-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+  -webkit-transition-timing-function: ease;
+  transition-timing-function: ease;
+}
+/* line 239, ../scss/screen.scss */
+#tags .btn:hover {
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -moz-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+  -webkit-transition-timing-function: ease;
+  transition-timing-function: ease;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -moz-transition-duration: 0.1s;
+  -o-transition-duration: 0.1s;
+  -webkit-transition-duration: 0.1s;
+  transition-duration: 0.1s;
+  -moz-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+  -webkit-transition-timing-function: ease;
+  transition-timing-function: ease;
+  color: black;
+}
+/* line 119, ../scss/_base.scss */
+#tags .btn:hover:active {
+  opacity: .6;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -moz-transition-duration: 0.1s;
+  -o-transition-duration: 0.1s;
+  -webkit-transition-duration: 0.1s;
+  transition-duration: 0.1s;
+  -moz-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+  -webkit-transition-timing-function: ease;
+  transition-timing-function: ease;
+}
+@media (max-width: 768px) {
+  /* line 222, ../scss/screen.scss */
+  #tags .btn {
+    margin: 8px;
+  }
+}
+/* line 248, ../scss/screen.scss */
+#tags .btn.active {
+  font-family: "Din-Bold";
+}
+
+/* line 255, ../scss/screen.scss */
+#colors {
+  position: relative;
+  float: left;
+  width: 160px;
+  background-color: transparent;
+}
+/* line 261, ../scss/screen.scss */
+#colors .btn.color {
+  display: block;
+  margin-top: 2px;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.15s;
+  -o-transition-duration: 0.15s;
+  -webkit-transition-duration: 0.15s;
+  transition-duration: 0.15s;
+  -moz-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+  -webkit-transition-timing-function: ease;
+  transition-timing-function: ease;
+}
+/* line 267, ../scss/screen.scss */
+#colors .btn.color.blue .left {
+  background-color: #3F54D1;
+}
+/* line 268, ../scss/screen.scss */
+#colors .btn.color.cyan .left {
+  background-color: #2cbae7;
+}
+/* line 269, ../scss/screen.scss */
+#colors .btn.color.green .left {
+  background-color: #65b11a;
+}
+/* line 270, ../scss/screen.scss */
+#colors .btn.color.yellow .left {
+  background-color: #FFD52E;
+}
+/* line 271, ../scss/screen.scss */
+#colors .btn.color.orange .left {
+  background-color: #FFA500;
+}
+/* line 272, ../scss/screen.scss */
+#colors .btn.color.red .left {
+  background-color: #ff5533;
+}
+/* line 273, ../scss/screen.scss */
+#colors .btn.color.pink .left {
+  background-color: #fe2973;
+}
+/* line 274, ../scss/screen.scss */
+#colors .btn.color.black .left {
+  background-color: #000000;
+}
+/* line 276, ../scss/screen.scss */
+#colors .btn.color .left {
+  float: left;
+  position: relative;
+  width: 16px;
+  height: 10px;
+}
+/* line 283, ../scss/screen.scss */
+#colors .btn.color .right {
+  float: left;
+  position: relative;
+  width: 144px;
+  height: 10px;
+}
+/* line 291, ../scss/screen.scss */
+#colors .btn.color:hover {
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.15s;
+  -o-transition-duration: 0.15s;
+  -webkit-transition-duration: 0.15s;
+  transition-duration: 0.15s;
+  -moz-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+  -webkit-transition-timing-function: ease;
+  transition-timing-function: ease;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -moz-transition-duration: 0.1s;
+  -o-transition-duration: 0.1s;
+  -webkit-transition-duration: 0.1s;
+  transition-duration: 0.1s;
+  -moz-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+  -webkit-transition-timing-function: ease;
+  transition-timing-function: ease;
+}
+/* line 119, ../scss/_base.scss */
+#colors .btn.color:hover:active {
+  opacity: .6;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -moz-transition-duration: 0.1s;
+  -o-transition-duration: 0.1s;
+  -webkit-transition-duration: 0.1s;
+  transition-duration: 0.1s;
+  -moz-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+  -webkit-transition-timing-function: ease;
+  transition-timing-function: ease;
+}
+/* line 294, ../scss/screen.scss */
+#colors .btn.color:hover.blue {
+  background-color: #6879db;
+}
+/* line 295, ../scss/screen.scss */
+#colors .btn.color:hover.cyan {
+  background-color: #5ac9ec;
+}
+/* line 296, ../scss/screen.scss */
+#colors .btn.color:hover.green {
+  background-color: #7edd21;
+}
+/* line 297, ../scss/screen.scss */
+#colors .btn.color:hover.yellow {
+  background-color: #ffdf61;
+}
+/* line 298, ../scss/screen.scss */
+#colors .btn.color:hover.orange {
+  background-color: #ffb733;
+}
+/* line 299, ../scss/screen.scss */
+#colors .btn.color:hover.red {
+  background-color: #ff7f66;
+}
+/* line 300, ../scss/screen.scss */
+#colors .btn.color:hover.pink {
+  background-color: #fe5c94;
+}
+/* line 301, ../scss/screen.scss */
+#colors .btn.color:hover.black {
+  background-color: #1a1a1a;
+}
+@media (max-width: 768px) {
+  /* line 255, ../scss/screen.scss */
+  #colors {
+    margin-top: 20px;
+    padding: 0;
+  }
+  /* line 308, ../scss/screen.scss */
+  #colors .color {
+    margin: 0;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+  }
+}
+
+/* line 317, ../scss/screen.scss */
+.slideshow {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+/* line 320, ../scss/screen.scss */
+.slideshow .slideWrap {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: calc(100% + 2 * 0px);
+  height: calc(100% + 2 * 0px);
+  -webkit-filter: blur(0);
+  overflow: hidden;
+}
+/* line 328, ../scss/screen.scss */
+.slideshow .slideWrap.blur {
+  -webkit-filter: blur(0px);
+}
+/* line 331, ../scss/screen.scss */
+.slideshow .slideWrap .slide {
+  opacity: 1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -moz-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+  -webkit-transition-timing-function: ease;
+  transition-timing-function: ease;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -moz-transition-duration: 0.1s;
+  -o-transition-duration: 0.1s;
+  -webkit-transition-duration: 0.1s;
+  transition-duration: 0.1s;
+  -moz-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+  -webkit-transition-timing-function: ease;
+  transition-timing-function: ease;
+}
+/* line 119, ../scss/_base.scss */
+.slideshow .slideWrap .slide:active {
+  opacity: .6;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -moz-transition-duration: 0.1s;
+  -o-transition-duration: 0.1s;
+  -webkit-transition-duration: 0.1s;
+  transition-duration: 0.1s;
+  -moz-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+  -webkit-transition-timing-function: ease;
+  transition-timing-function: ease;
+}
+/* line 342, ../scss/screen.scss */
+.slideshow .slideWrap .slide i.wait {
+  color: black;
+  margin-top: 30%;
+  font-size: 64px;
+}
+/* line 351, ../scss/screen.scss */
+.slideshow .slideWrap .slide.blur {
+  -webkit-filter: blur(0px);
+}
+/* line 355, ../scss/screen.scss */
+.slideshow .slideWrap .slide.old {
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
+  -moz-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+  -webkit-transition-timing-function: ease;
+  transition-timing-function: ease;
+  opacity: 0;
+}
+/* line 360, ../scss/screen.scss */
+.slideshow .slideWrap .slide.current {
+  z-index: 10;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
+  -moz-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+  -webkit-transition-timing-function: ease;
+  transition-timing-function: ease;
+  opacity: 1;
+}
+/* line 366, ../scss/screen.scss */
+.slideshow .slideWrap .slide.next {
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
+  -moz-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+  -webkit-transition-timing-function: ease;
+  transition-timing-function: ease;
+  opacity: 0;
+}
+
+/*═══════════════╗
+║                ║
+╚═══════════════*/

@@ -1,0 +1,221 @@
+
+<html>
+  <head></head>
+  <meta charset="utf-8"/>
+  <meta name="format-detection" content="telephone=no"/>
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+  <link rel="stylesheet" type="text/css" href="css/screen.css"/>
+  <script type="text/javascript" src="js/underscore.min.js"></script>
+  <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="js/highlight.min.js"></script>
+  <script type="text/javascript" src="js/highlight.lua.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/font/black-tie/css/black-tie.min.css"/>
+  <script type="text/javascript" src="js/mad.js"></script>
+  <script type="text/javascript" src="js/hue.js"></script>
+  <script type="text/javascript" src="js/dim.js"></script>
+  <script type="text/javascript" src="js/display_modules.js"></script>
+  <script type="text/javascript" src="assets/myDummyJSON.js"></script>
+  <title>LAEH</title>
+  <body>
+    <div class="viewport">
+      <div class="screen">
+        <div id="display">
+          <div class="content">
+            <div class="slideshow"></div>
+          </div>
+        </div>
+        <div id="menu">
+          <div id="modes">
+            <div class="btn active" data-mode="slide">SLIDESHOW</div>
+            <div class="btn inactive" data-mode="scroll">SCROLL</div>
+          </div>
+          <div id="tags">
+            <div class="btn active" data-id="all">LA</div>
+            <div class="vspacing"></div>
+            <div class="btn tag inactive" data-id="enveloppe"> CLASS</div>
+            <div class="btn tag inactive" data-id="large">     COMPOSITON</div>
+            <div class="btn tag inactive" data-id="arto">      SYSTEM</div>
+            <div class="vspacing"></div>
+            <div class="btn inactive" data-id="processed">     #MADPIXELS</div>
+            <div class="btn inactive" data-id="people">        #CHARACTERS</div>
+            <div class="btn inactive" data-id="light">         #ILOVELIGHT</div>
+            <div class="vspacing"></div>
+          </div>
+          <div id="colors">
+            <div class="btn tag yellow color" data-id="yellow">
+              <div class="left"></div>
+              <div class="right"></div>
+            </div>
+            <div class="btn tag orange color" data-id="orange">
+              <div class="left"></div>
+              <div class="right"></div>
+            </div>
+            <div class="btn tag red color" data-id="red">
+              <div class="left"></div>
+              <div class="right"></div>
+            </div>
+            <div class="btn tag pink color" data-id="pink">
+              <div class="left"></div>
+              <div class="right"></div>
+            </div>
+            <div class="btn tag blue color" data-id="blue">
+              <div class="left"></div>
+              <div class="right"></div>
+            </div>
+            <div class="btn tag cyan color" data-id="cyan">
+              <div class="left"></div>
+              <div class="right"></div>
+            </div>
+            <div class="btn tag green color" data-id="green">
+              <div class="left"></div>
+              <div class="right"></div>
+            </div>
+            <div class="btn tag black color" data-id="black">
+              <div class="left"></div>
+              <div class="right"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="name">Louis-Alexandre Etezad-Heydari</div>
+      <div id="logo"></div>
+      <div id="mask"></div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    $(document).ready(function() {
+    
+        //- ╔══════════════════════════════════════════╗
+        //- ║                                          ║
+        //- ╚══════════════════════════════════════════╝
+        var docw = $('body').width();
+        var doch = $('body').height();
+        var displayRatio = docw / doch;
+        console.log(docw,doch,displayRatio)
+        
+        if (docw > 1024){
+            console.log('YES docw < 1024')
+            $('#mask').addClass('hidden')
+            
+        }
+        
+        //- ╔══════════════════════════════════════════╗
+        //- ║                                          ║
+        //- ╚══════════════════════════════════════════╝
+        
+        var s = '1000'
+        //- MIN & MAX
+        var w = $('.slideshow').width()
+        var h = $('.slideshow').height()
+        if ( w  < 400  || doch < 400  ){  s = '400';}
+        if ( w  > 1000 || w  > 1000 ){ s = '1000';}
+        
+        if ( (w  > 400 && w <600)   || (w  > 400 && w  <600) )   { s = '600';}
+        if ( (w  > 600 && w <800)   || (w  > 600 && w  <800) )   { s = '800';}
+        if ( (w  > 800 && w <1000)  || (w  > 800 && w  <1000) )  { s = '1000';}
+        
+        var baseUrl = 'https://dl.dropboxusercontent.com/u/233335115/images/laeh.io/set/' + s + '/';
+        var ext = '.jpg';
+        
+        // Format imagesMap generation
+        for (var key in imagesMap) {
+            var urls = [];
+            for(var i = 0; i < imagesMap[key].length; i++) {
+                // an image id is 4 characters (ex: 00001, 00099)
+                var nZero = 5 - imagesMap[key][i].toString().length;
+                var nZero = 0
+                
+                var url = '';
+                for(var z = 0; z < nZero; z++) {
+                    url += '0';
+                }
+                url += imagesMap[key][i];
+                
+                urls.push(baseUrl + url + ext);
+            }
+            imagesMap[key] = urls;
+        }
+        
+        //- ╔══════════════════════════════════════════╗
+        //- ║                                          ║
+        //- ╚══════════════════════════════════════════╝
+        
+        var mySlideshow = new Display.slideshow({
+            'images': [],
+            'slideDuration': 5000,
+            '$container': $('.slideshow')
+        });
+        
+         var myScroll = new Display.scroll({
+            'images': [],
+            '$container': $('.slideshow')
+        });
+        
+        // Load a new tag
+        $('.btn').click(function(e) {
+            e.stopPropagation();
+            
+            $('.btn').removeClass('active');
+            $(this).addClass('active');
+            
+            var id = $(this).data('id');
+            if(id) {
+                loadTag(id);
+            }
+        });
+        
+        function loadTag(id) {
+            currentTag = id || currentTag;
+            
+            if(currentMode === 'slide') {
+                mySlideshow.update(imagesMap[currentTag]);
+                mySlideshow.reset();
+                mySlideshow.render();
+                mySlideshow.start();
+                $('.screen').removeClass('scroll')
+            } else {
+                $('.screen').addClass('scroll')
+                myScroll.update(imagesMap[currentTag]);
+                myScroll.reset();
+                myScroll.render();
+                myScroll.start();
+            }
+        };
+        
+        // Change the mode for the current tag
+        $('#modes .btn').click(function(e) {
+            e.stopPropagation();
+            
+            var mode = $(this).data('mode');
+            if(mode != currentMode) {
+                currentMode = mode;
+                loadTag();
+            }
+        });
+        
+        var currentTag = Object.keys(imagesMap)[0]; // default tag is first
+        var currentMode = 'slide'; // default mode is slideshow
+        
+        //- var currentMode = 'scroll';
+        
+        // Load the first tag with the default mode
+        loadTag();
+        
+        //- ╔══════════════════════════════════════════╗
+        //- ║                                          ║
+        //- ╚══════════════════════════════════════════╝
+        
+        $('.warning').click(function() {
+            console.log('warning clicked')
+            $('.warning').toggleClass('hidden');
+        });
+        
+        $('.menu').click(function() {
+            console.log('menu clicker')
+            $('.menu').toggleClass('hidden');
+        });
+    });
+  </script>
+</html>

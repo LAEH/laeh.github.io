@@ -1,0 +1,115 @@
+/*
+
+Style with support for rainbow parens
+
+*/
+
+.hljs {
+    display: block;
+    overflow-x: auto;
+    padding: 0.5em;
+/*    background: rgba(0,0,0,.4);*/
+    color: #d1d9e1;
+}
+
+
+.hljs-body,.hljs-collection {
+    color: $grey;
+    font-size: 8px;
+}
+
+//COMMENT
+.hljs-comment,.hljs-template_comment,.diff .hljs-header,.hljs-doctype,.lisp .hljs-string,.hljs-javadoc {
+  color: lighten(#151c29,10);
+  font-style: italic;
+}
+
+.hljs-keyword,
+.clojure .hljs-attribute,
+.hljs-winutils,
+.javascript .hljs-title,
+.hljs-addition,
+.css .hljs-tag {
+  color: $white;
+  font-weight: 900;
+}
+
+.hljs-number { color: #fe286f;
+}
+
+.hljs-command,
+.hljs-string,
+.hljs-tag .hljs-value,
+.hljs-phpdoc,
+.tex .hljs-formula,
+.hljs-regexp,
+.hljs-hexcolor {
+  color: $yellow;
+  font-weight: 700;
+}
+
+.hljs-title,
+.hljs-localvars,
+.hljs-function .hljs-title,
+.hljs-chunk,
+.hljs-decorator,
+.hljs-built_in,
+.lisp .hljs-title,
+.hljs-identifier {
+  color: $white;
+  font-weight: 700;
+}
+
+.hljs-class .hljs-keyword {
+  color: $white;
+  font-style: italic!important;
+  font-weight: 300!important;
+}
+
+.hljs-variable,
+.lisp .hljs-body,
+.smalltalk .hljs-number,
+.hljs-constant,
+.hljs-class .hljs-title,
+.hljs-parent,
+.haskell .hljs-label,
+.hljs-id,
+.lisp .hljs-title,
+.clojure .hljs-title .hljs-built_in {
+ color: $blue;
+}
+
+.hljs-tag .hljs-title,
+.hljs-rules .hljs-property,
+.django .hljs-tag .hljs-keyword,
+.clojure .hljs-title .hljs-built_in {
+  font-weight: bold;
+}
+
+.hljs-attribute,
+.clojure .hljs-title {
+  color: $blue;
+}
+
+.hljs-preprocessor,
+.hljs-pragma,
+.hljs-pi,
+.hljs-shebang,
+.hljs-symbol,
+.hljs-symbol .hljs-string,
+.diff .hljs-change,
+.hljs-special,
+.hljs-attr_selector,
+.hljs-important,
+.hljs-subst,
+.hljs-cdata {
+  color: $green;
+}
+
+.hljs-deletion {
+  color: #dc322f;
+}
+
+.tex .hljs-formula {
+  background: #eee8d5;
+}

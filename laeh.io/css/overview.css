@@ -1,0 +1,243 @@
+/* line 5, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 11, ../scss/overview.scss */
+body, html {
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: subpixel-antialiased;
+  line-height: normal;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+  background-color: whitesmoke;
+}
+/* line 22, ../scss/overview.scss */
+body *,
+body *:before,
+body *:after, html *,
+html *:before,
+html *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+/* line 30, ../scss/overview.scss */
+body a, body a:link, body a:visited, html a, html a:link, html a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+/* line 36, ../scss/overview.scss */
+#auth {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: whitesmoke;
+  text-align: center;
+  padding: 24px;
+}
+/* line 44, ../scss/overview.scss */
+#auth #construction-message {
+  display: inline-block;
+  font-size: 36px;
+  line-height: 56px;
+  color: #999999;
+}
+/* line 51, ../scss/overview.scss */
+#auth #form {
+  position: relative;
+  margin: 0 auto;
+  height: 100%;
+  width: 320px;
+  margin-top: 128px;
+}
+/* line 58, ../scss/overview.scss */
+#auth #form input[type=password], #auth #form input[type=text] {
+  width: 256px;
+  margin: 10px;
+  position: relative;
+  height: 36px;
+  padding-left: 30px;
+  background: linear-gradient(to bottom, #f7f7f8 0%, #ffffff 100%);
+  border-radius: 3px;
+  border: none;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2) inset, 0 -1px 0 rgba(0, 0, 0, 0.05) inset;
+  transition: all 0.2s linear;
+  font-size: 13px;
+  color: #222222;
+}
+/* line 77, ../scss/overview.scss */
+#auth #form input[type=password]::-webkit-input-placeholder, #auth #form input[type=text]::-webkit-input-placeholder {
+  color: #999999;
+}
+/* line 81, ../scss/overview.scss */
+#auth #form input[type=password]:-moz-placeholder, #auth #form input[type=text]:-moz-placeholder {
+  color: #999999;
+}
+/* line 85, ../scss/overview.scss */
+#auth #form input[type=password]:focus, #auth #form input[type=text]:focus {
+  box-shadow: 0 1px 0 #2392F3 inset, 0 -1px 0 #2392F3 inset, 1px 0 0 #2392F3 inset, -1px 0 0 #2392F3 inset, 0 0 4px rgba(35, 146, 243, 0.5);
+  outline: none;
+}
+
+/* line 93, ../scss/overview.scss */
+#sidebar, #container {
+  position: relative;
+  float: left;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  height: 100%;
+}
+
+/* line 102, ../scss/overview.scss */
+#sidebar {
+  width: 25%;
+  padding: 24px;
+  border-right: 1px solid #bbb;
+  -moz-box-shadow: 0 0 20px #ccc;
+  -webkit-box-shadow: 0 0 20px #ccc;
+  box-shadow: 0 0 20px #ccc;
+}
+/* line 108, ../scss/overview.scss */
+#sidebar li {
+  float: left;
+  width: 100%;
+  margin-bottom: 12px;
+  text-transform: capitalize;
+}
+/* line 114, ../scss/overview.scss */
+#sidebar li a {
+  display: block;
+}
+/* line 122, ../scss/overview.scss */
+#sidebar li.level_0 {
+  padding-left: 12px;
+}
+/* line 122, ../scss/overview.scss */
+#sidebar li.level_1 {
+  padding-left: 44px;
+}
+/* line 122, ../scss/overview.scss */
+#sidebar li.level_2 {
+  padding-left: 76px;
+}
+/* line 122, ../scss/overview.scss */
+#sidebar li.level_3 {
+  padding-left: 108px;
+}
+/* line 122, ../scss/overview.scss */
+#sidebar li.level_4 {
+  padding-left: 140px;
+}
+/* line 127, ../scss/overview.scss */
+#sidebar li.last {
+  text-decoration: underline;
+}
+
+/* line 133, ../scss/overview.scss */
+#container {
+  width: 75%;
+  padding: 24px;
+}
+/* line 137, ../scss/overview.scss */
+#container div.label {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+/* line 141, ../scss/overview.scss */
+#container div.label img {
+  -moz-transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  display: inline-block;
+  width: 75%;
+  margin: 12px 0 0 0;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 640px) {
+  /* line 155, ../scss/overview.scss */
+  #sidebar, #container {
+    width: 100%;
+    position: absolute;
+  }
+
+  /* line 160, ../scss/overview.scss */
+  #sidebar {
+    top: 0;
+    height: 150px;
+    border-right: none;
+    border-bottom: 1px solid #bbb;
+  }
+
+  /* line 168, ../scss/overview.scss */
+  #container {
+    top: 200px;
+    height: -moz-calc(100% - 200px);
+    height: -webkit-calc(100% - 200px);
+    height: calc(100% - 200px);
+  }
+}

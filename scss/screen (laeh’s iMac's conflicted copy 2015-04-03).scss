@@ -1,0 +1,386 @@
+@import "compass/reset";
+@import "compass/css3";
+@import "base";
+@import "code";
+
+/*═══════════════╗
+║                ║
+╚═══════════════*/
+
+.btn {
+   cursor: pointer;
+   @include anim-medium();
+   &:hover {
+      cursor: pointer;
+      @include anim-medium();
+   }
+}
+
+.viewport {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: $base;
+   @include anim-slow();
+   border-radius: $br;
+}
+
+.screen {
+   display: inline-block;
+   position: relative;
+   margin-top: 60px;
+   width:90%;
+   height: 80%;
+   max-width: 1100px;
+   max-height: 960px;
+   background-color: $base;
+
+   @include reflow(mobile){
+      position: absolute;
+      top:0;
+      left:0;
+      width:100%;
+      border-radius: 0px;
+      height:calc(100% - 45px)
+  }
+
+   #display {
+      position: absolute;
+      top:0;
+      right:0;
+      width:calc(100% - #{$menu});
+      height: 100%;
+      background-color: $testcolor;
+
+      @include reflow(mobile){
+        position: absolute;
+        top:0;
+        width: 100%;
+        height:calc(100% - 160px);
+     }
+
+      .content {
+         position: absolute;
+         top: calc(50% - #{$h/2});
+         left: calc(50% - #{$w/2});
+         width: $w;
+         height: $h;
+         img {
+           width: 100%;
+         }
+      }
+   }
+}
+
+
+#screenSizeMask {
+   @include absolute_fill;
+   display: block;
+   background-color: rgba(white,.96);
+
+   &.hidden {
+     display: none;
+   }
+}
+
+#name {
+   position: absolute;
+   top:0;
+   left:0;
+   height: $menu/2;
+   width: $menu;
+   padding-left: 10px;
+   padding-top: 6px;
+   padding-right: 10px;
+   font-size: 9px;
+   line-height: 9px;
+   font-family: $regular;
+   background-color: rgba(0,0,0,0.6);
+   background-color: #111116;
+   border-bottom-right-radius:3px;
+   color: white;
+
+   .short,.short {
+      position: relative;
+      float: left;
+      width: $menu;
+   }
+   .short {
+      line-height: 60px;
+      line-height: 40px;
+   }
+
+   .long {
+
+   }
+
+
+   @include reflow(mobile){
+      left: 0;
+      top: 80px;
+      border-radius:0;
+      text-align: center;
+      position: absolute;
+      background-color: rgba(#000024, .8);
+      left: -60px;
+      margin:0px;
+       transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+      -webkit-transform: rotate(-90deg);
+  }
+}
+
+
+#menu {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: $menu;
+   height: $h;
+   border-radius: $br;
+   @include anim-medium();
+   background-color: $testcolor;
+
+   @include reflow(mobile){
+      padding-top: 20px;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      height:160px;
+     // background-color: #000024;
+  }
+}
+
+
+#modes {
+   position: relative;
+   float: left;
+   width: 100%;
+   height: 80px;
+   padding-left: 10px;
+   text-align: left;
+   background-color: darken($testcolor, 10);
+
+   .btn {
+       position: relative;
+       float: left;
+       width: auto;
+       margin : 2px;
+       padding: 6px 10px 4px 10px;
+       font-size: 9px;
+       line-height: 9px;
+       font-family: $condmedium;
+       border-radius: 3px;
+       background-color: transparent;
+       border: solid 1px black;
+       background-color: black;
+         color: white;
+
+       &.active {
+         background-color: black;
+         color: white;
+       }
+
+    }
+
+    @include reflow(mobile){
+      position: absolute;
+      right: 0;
+      height: 100%
+  }
+}
+
+#tags {
+   position: relative;
+   display: block;
+   float: left;
+   width: $menu;
+   text-align: left;
+   background-color: darken($testcolor, 20);
+
+   @include reflow(mobile){
+      margin-top: 0px;
+      width: 100%;
+      padding-left: 20px;
+      padding-right: 20px;
+  }
+   // background-color: pink;
+
+   .vspacing {
+      position: relative;
+      display: inline-block;
+      height: 32px;
+      width:100%;
+      @include reflow(mobile){
+        height: 0;
+     }
+   }
+
+   .btn {
+      position: relative;
+      float: left;
+      text-align: right;
+      width: $menu;
+      font-size: 10px;
+      line-height: 12px;
+      padding-right: 40px;
+      font-family: $light;
+      border: solid 1px transparent;
+      border-radius: 3px;
+      @include anim-medium();
+      @include ontouch();
+      cursor: pointer;
+      color: #676767;
+      $opacity: .05;
+
+      &:hover {
+         @include anim-medium();
+         @include ontouch();
+         color: black;
+      }
+      @include reflow(mobile){
+         margin : 8px;
+      }
+
+      &.active {
+         font-family: $bold;
+         // border-bottom: 1px solid black;
+      }
+   }
+}
+
+#colors {
+   position: relative;
+   float: left;
+   width: $menu;
+   background-color: darken($testcolor, 30);
+
+   .btn.color {
+      display: block;
+      margin-top: 2px;
+
+
+      @include anim-fast();
+      &.blue .left{background-color:$blue;}
+      &.cyan .left{background-color:$cyan;}
+      &.green .left{background-color:$green;}
+      &.yellow .left{background-color:$yellow;}
+      &.orange .left{background-color:$orange;}
+      &.red .left{background-color:$red;}
+      &.pink .left{background-color:$pink;}
+      &.black .left{background-color:$black;}
+
+      .left {
+         float: left;
+         position: relative;
+         width: 16px;
+         height: 10px;
+      }
+
+      .right {
+         float: left;
+         position: relative;
+         width: $menu - 16px;
+         height: 10px;
+      }
+
+
+      &:hover {
+         @include anim-fast();
+         @include ontouch();
+         &.blue{background-color:lighten($blue, 10);}
+         &.cyan{background-color:lighten($cyan, 10);}
+         &.green{background-color:lighten($green, 10);}
+         &.yellow{background-color:lighten($yellow, 10);}
+         &.orange{background-color:lighten($orange, 10);}
+         &.red{background-color:lighten($red, 10);}
+         &.pink{background-color:lighten($pink, 10);}
+         &.black{background-color:lighten($black, 10);}
+
+      }
+   }
+   @include reflow(mobile){
+      margin-top: 20px;
+      padding: 0;
+      .color {
+         margin: 0;
+         width: 16px;
+         height: 16px;
+         display: inline-block;
+      }
+  }
+}
+
+.slideshow {
+   @include absolute_fill;
+
+   .slideWrap {
+      position: absolute;
+      top: - $blur;
+      left: - $blur;
+      width: calc(100% + 2 * #{$blur});
+      height: calc(100% + 2 * #{$blur});
+      -webkit-filter:blur(0);
+      overflow: hidden;
+      &.blur {
+         -webkit-filter:blur($blur);
+      }
+     .slide {
+         opacity:1;
+         position: absolute;
+         width: 100%;
+         height: 100%;
+         background-position: left top;
+         background-repeat: no-repeat;
+         background-size: contain;
+         @include anim-medium;
+         @include ontouch;
+
+         i.wait {
+            // position: relative;
+            // display: inline-block;
+            color: black;
+            margin-top: 30%;
+            font-size: 64px;
+         }
+
+
+         &.blur {
+            -webkit-filter:blur($blur);
+         }
+
+         &.old {
+            @include anim-slow;
+            // @include translate3d(-100%,0,0);
+            opacity: 0;
+         }
+         &.current {
+            z-index: 10;
+            @include anim-slow;
+            opacity: 1;
+            // @include translate3d(0,0,0);
+         }
+         &.next {
+            @include anim-slow;
+            opacity: 0;
+            // @include translate3d(100%,0,0);
+         }
+      }
+   }
+}
+
+/*═══════════════╗
+║                ║
+╚═══════════════*/
+
+
+
+// $direction: left;
+// $opposite: opposite-position($direction); /* Outputs "right" */
+
+// $position: top right;
+// $opposite: opposite-position($position); /* Outputs "bottom left" */
+
