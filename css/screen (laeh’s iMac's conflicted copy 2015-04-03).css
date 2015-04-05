@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* line 5, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -21,50 +21,50 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
 
-/* line 5, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -86,45 +86,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -362,7 +362,7 @@ Style with support for rainbow parens
 /*═══════════════╗
 ║                ║
 ╚═══════════════*/
-/* line 10, ../scss/screen.scss */
+/* line 10, ../scss/screen (laeh’s iMac's conflicted copy 2015-04-03).scss */
 .btn {
   cursor: pointer;
   -moz-transition-property: all;
@@ -378,7 +378,7 @@ Style with support for rainbow parens
   -webkit-transition-timing-function: ease;
   transition-timing-function: ease;
 }
-/* line 13, ../scss/screen.scss */
+/* line 13, ../scss/screen (laeh’s iMac's conflicted copy 2015-04-03).scss */
 .btn:hover {
   cursor: pointer;
   -moz-transition-property: all;
@@ -395,7 +395,7 @@ Style with support for rainbow parens
   transition-timing-function: ease;
 }
 
-/* line 19, ../scss/screen.scss */
+/* line 19, ../scss/screen (laeh’s iMac's conflicted copy 2015-04-03).scss */
 .viewport {
   position: fixed;
   top: 0;
@@ -418,7 +418,7 @@ Style with support for rainbow parens
   border-radius: 0px;
 }
 
-/* line 30, ../scss/screen.scss */
+/* line 30, ../scss/screen (laeh’s iMac's conflicted copy 2015-04-03).scss */
 .screen {
   display: inline-block;
   position: relative;
@@ -430,7 +430,7 @@ Style with support for rainbow parens
   background-color: #ffffff;
 }
 @media (max-width: 768px) {
-  /* line 30, ../scss/screen.scss */
+  /* line 30, ../scss/screen (laeh’s iMac's conflicted copy 2015-04-03).scss */
   .screen {
     position: absolute;
     top: 0;
@@ -440,17 +440,17 @@ Style with support for rainbow parens
     height: calc(100% - 45px);
   }
 }
-/* line 49, ../scss/screen.scss */
+/* line 49, ../scss/screen (laeh’s iMac's conflicted copy 2015-04-03).scss */
 .screen #display {
   position: absolute;
   top: 0;
   right: 0;
   width: calc(100% - 160px);
   height: 100%;
-  background-color: transparent;
+  background-color: #3F54D1;
 }
 @media (max-width: 768px) {
-  /* line 49, ../scss/screen.scss */
+  /* line 49, ../scss/screen (laeh’s iMac's conflicted copy 2015-04-03).scss */
   .screen #display {
     position: absolute;
     top: 0;
@@ -458,7 +458,7 @@ Style with support for rainbow parens
     height: calc(100% - 160px);
   }
 }
-/* line 64, ../scss/screen.scss */
+/* line 64, ../scss/screen (laeh’s iMac's conflicted copy 2015-04-03).scss */
 .screen #display .content {
   position: absolute;
   top: calc(50% - 50%);
@@ -466,12 +466,12 @@ Style with support for rainbow parens
   width: 100%;
   height: 100%;
 }
-/* line 70, ../scss/screen.scss */
+/* line 70, ../scss/screen (laeh’s iMac's conflicted copy 2015-04-03).scss */
 .screen #display .content img {
   width: 100%;
 }
 
-/* line 78, ../scss/screen.scss */
+/* line 78, ../scss/screen (laeh’s iMac's conflicted copy 2015-04-03).scss */
 #screenSizeMask {
   position: absolute;
   height: 100%;
@@ -481,12 +481,12 @@ Style with support for rainbow parens
   display: block;
   background-color: rgba(255, 255, 255, 0.96);
 }
-/* line 83, ../scss/screen.scss */
+/* line 83, ../scss/screen (laeh’s iMac's conflicted copy 2015-04-03).scss */
 #screenSizeMask.hidden {
   display: none;
 }
 
-/* line 88, ../scss/screen.scss */
+/* line 88, ../scss/screen (laeh’s iMac's conflicted copy 2015-04-03).scss */
 #name {
   position: absolute;
   top: 0;
@@ -504,19 +504,19 @@ Style with support for rainbow parens
   border-bottom-right-radius: 3px;
   color: white;
 }
-/* line 105, ../scss/screen.scss */
+/* line 105, ../scss/screen (laeh’s iMac's conflicted copy 2015-04-03).scss */
 #name .short, #name .short {
   position: relative;
   float: left;
   width: 160px;
 }
-/* line 110, ../scss/screen.scss */
+/* line 110, ../scss/screen (laeh’s iMac's conflicted copy 2015-04-03).scss */
 #name .short {
   line-height: 60px;
   line-height: 40px;
 }
 @media (max-width: 768px) {
-  /* line 88, ../scss/screen.scss */
+  /* line 88, ../scss/screen (laeh’s iMac's conflicted copy 2015-04-03).scss */
   #name {
     left: 0;
     top: 80px;
@@ -532,7 +532,7 @@ Style with support for rainbow parens
   }
 }
 
-/* line 136, ../scss/screen.scss */
+/* line 136, ../scss/screen (laeh’s iMac's conflicted copy 2015-04-03).scss */
 #menu {
   position: absolute;
   top: 0;
@@ -552,10 +552,10 @@ Style with support for rainbow parens
   -o-transition-timing-function: ease;
   -webkit-transition-timing-function: ease;
   transition-timing-function: ease;
-  background-color: transparent;
+  background-color: #3F54D1;
 }
 @media (max-width: 768px) {
-  /* line 136, ../scss/screen.scss */
+  /* line 136, ../scss/screen (laeh’s iMac's conflicted copy 2015-04-03).scss */
   #menu {
     padding-top: 20px;
     position: absolute;
@@ -566,7 +566,7 @@ Style with support for rainbow parens
   }
 }
 
-/* line 158, ../scss/screen.scss */
+/* line 158, ../scss/screen (laeh’s iMac's conflicted copy 2015-04-03).scss */
 #modes {
   position: relative;
   float: left;
@@ -574,9 +574,9 @@ Style with support for rainbow parens
   height: 80px;
   padding-left: 10px;
   text-align: left;
-  background-color: transparent;
+  background-color: #2b3eb2;
 }
-/* line 167, ../scss/screen.scss */
+/* line 167, ../scss/screen (laeh’s iMac's conflicted copy 2015-04-03).scss */
 #modes .btn {
   position: relative;
   float: left;
@@ -592,13 +592,13 @@ Style with support for rainbow parens
   background-color: black;
   color: white;
 }
-/* line 182, ../scss/screen.scss */
+/* line 182, ../scss/screen (laeh’s iMac's conflicted copy 2015-04-03).scss */
 #modes .btn.active {
   background-color: black;
   color: white;
 }
 @media (max-width: 768px) {
-  /* line 158, ../scss/screen.scss */
+  /* line 158, ../scss/screen (laeh’s iMac's conflicted copy 2015-04-03).scss */
   #modes {
     position: absolute;
     right: 0;
@@ -606,17 +606,17 @@ Style with support for rainbow parens
   }
 }
 
-/* line 196, ../scss/screen.scss */
+/* line 196, ../scss/screen (laeh’s iMac's conflicted copy 2015-04-03).scss */
 #tags {
   position: relative;
   display: block;
   float: left;
   width: 160px;
   text-align: left;
-  background-color: transparent;
+  background-color: #213089;
 }
 @media (max-width: 768px) {
-  /* line 196, ../scss/screen.scss */
+  /* line 196, ../scss/screen (laeh’s iMac's conflicted copy 2015-04-03).scss */
   #tags {
     margin-top: 0px;
     width: 100%;
@@ -624,7 +624,7 @@ Style with support for rainbow parens
     padding-right: 20px;
   }
 }
-/* line 212, ../scss/screen.scss */
+/* line 212, ../scss/screen (laeh’s iMac's conflicted copy 2015-04-03).scss */
 #tags .vspacing {
   position: relative;
   display: inline-block;
@@ -632,12 +632,12 @@ Style with support for rainbow parens
   width: 100%;
 }
 @media (max-width: 768px) {
-  /* line 212, ../scss/screen.scss */
+  /* line 212, ../scss/screen (laeh’s iMac's conflicted copy 2015-04-03).scss */
   #tags .vspacing {
     height: 0;
   }
 }
-/* line 222, ../scss/screen.scss */
+/* line 222, ../scss/screen (laeh’s iMac's conflicted copy 2015-04-03).scss */
 #tags .btn {
   position: relative;
   float: left;
@@ -692,7 +692,7 @@ Style with support for rainbow parens
   -webkit-transition-timing-function: ease;
   transition-timing-function: ease;
 }
-/* line 239, ../scss/screen.scss */
+/* line 239, ../scss/screen (laeh’s iMac's conflicted copy 2015-04-03).scss */
 #tags .btn:hover {
   -moz-transition-property: all;
   -o-transition-property: all;
@@ -737,24 +737,24 @@ Style with support for rainbow parens
   transition-timing-function: ease;
 }
 @media (max-width: 768px) {
-  /* line 222, ../scss/screen.scss */
+  /* line 222, ../scss/screen (laeh’s iMac's conflicted copy 2015-04-03).scss */
   #tags .btn {
     margin: 8px;
   }
 }
-/* line 248, ../scss/screen.scss */
+/* line 248, ../scss/screen (laeh’s iMac's conflicted copy 2015-04-03).scss */
 #tags .btn.active {
   font-family: "Din-Bold";
 }
 
-/* line 255, ../scss/screen.scss */
+/* line 255, ../scss/screen (laeh’s iMac's conflicted copy 2015-04-03).scss */
 #colors {
   position: relative;
   float: left;
   width: 160px;
-  background-color: transparent;
+  background-color: #172160;
 }
-/* line 261, ../scss/screen.scss */
+/* line 261, ../scss/screen (laeh’s iMac's conflicted copy 2015-04-03).scss */
 #colors .btn.color {
   display: block;
   margin-top: 2px;
@@ -771,53 +771,53 @@ Style with support for rainbow parens
   -webkit-transition-timing-function: ease;
   transition-timing-function: ease;
 }
-/* line 267, ../scss/screen.scss */
+/* line 267, ../scss/screen (laeh’s iMac's conflicted copy 2015-04-03).scss */
 #colors .btn.color.blue .left {
   background-color: #3F54D1;
 }
-/* line 268, ../scss/screen.scss */
+/* line 268, ../scss/screen (laeh’s iMac's conflicted copy 2015-04-03).scss */
 #colors .btn.color.cyan .left {
   background-color: #2cbae7;
 }
-/* line 269, ../scss/screen.scss */
+/* line 269, ../scss/screen (laeh’s iMac's conflicted copy 2015-04-03).scss */
 #colors .btn.color.green .left {
   background-color: #65b11a;
 }
-/* line 270, ../scss/screen.scss */
+/* line 270, ../scss/screen (laeh’s iMac's conflicted copy 2015-04-03).scss */
 #colors .btn.color.yellow .left {
   background-color: #FFD52E;
 }
-/* line 271, ../scss/screen.scss */
+/* line 271, ../scss/screen (laeh’s iMac's conflicted copy 2015-04-03).scss */
 #colors .btn.color.orange .left {
   background-color: #FFA500;
 }
-/* line 272, ../scss/screen.scss */
+/* line 272, ../scss/screen (laeh’s iMac's conflicted copy 2015-04-03).scss */
 #colors .btn.color.red .left {
   background-color: #ff5533;
 }
-/* line 273, ../scss/screen.scss */
+/* line 273, ../scss/screen (laeh’s iMac's conflicted copy 2015-04-03).scss */
 #colors .btn.color.pink .left {
   background-color: #fe2973;
 }
-/* line 274, ../scss/screen.scss */
+/* line 274, ../scss/screen (laeh’s iMac's conflicted copy 2015-04-03).scss */
 #colors .btn.color.black .left {
   background-color: #000000;
 }
-/* line 276, ../scss/screen.scss */
+/* line 276, ../scss/screen (laeh’s iMac's conflicted copy 2015-04-03).scss */
 #colors .btn.color .left {
   float: left;
   position: relative;
   width: 16px;
   height: 10px;
 }
-/* line 283, ../scss/screen.scss */
+/* line 283, ../scss/screen (laeh’s iMac's conflicted copy 2015-04-03).scss */
 #colors .btn.color .right {
   float: left;
   position: relative;
   width: 144px;
   height: 10px;
 }
-/* line 291, ../scss/screen.scss */
+/* line 291, ../scss/screen (laeh’s iMac's conflicted copy 2015-04-03).scss */
 #colors .btn.color:hover {
   -moz-transition-property: all;
   -o-transition-property: all;
@@ -860,45 +860,45 @@ Style with support for rainbow parens
   -webkit-transition-timing-function: ease;
   transition-timing-function: ease;
 }
-/* line 294, ../scss/screen.scss */
+/* line 294, ../scss/screen (laeh’s iMac's conflicted copy 2015-04-03).scss */
 #colors .btn.color:hover.blue {
   background-color: #6879db;
 }
-/* line 295, ../scss/screen.scss */
+/* line 295, ../scss/screen (laeh’s iMac's conflicted copy 2015-04-03).scss */
 #colors .btn.color:hover.cyan {
   background-color: #5ac9ec;
 }
-/* line 296, ../scss/screen.scss */
+/* line 296, ../scss/screen (laeh’s iMac's conflicted copy 2015-04-03).scss */
 #colors .btn.color:hover.green {
   background-color: #7edd21;
 }
-/* line 297, ../scss/screen.scss */
+/* line 297, ../scss/screen (laeh’s iMac's conflicted copy 2015-04-03).scss */
 #colors .btn.color:hover.yellow {
   background-color: #ffdf61;
 }
-/* line 298, ../scss/screen.scss */
+/* line 298, ../scss/screen (laeh’s iMac's conflicted copy 2015-04-03).scss */
 #colors .btn.color:hover.orange {
   background-color: #ffb733;
 }
-/* line 299, ../scss/screen.scss */
+/* line 299, ../scss/screen (laeh’s iMac's conflicted copy 2015-04-03).scss */
 #colors .btn.color:hover.red {
   background-color: #ff7f66;
 }
-/* line 300, ../scss/screen.scss */
+/* line 300, ../scss/screen (laeh’s iMac's conflicted copy 2015-04-03).scss */
 #colors .btn.color:hover.pink {
   background-color: #fe5c94;
 }
-/* line 301, ../scss/screen.scss */
+/* line 301, ../scss/screen (laeh’s iMac's conflicted copy 2015-04-03).scss */
 #colors .btn.color:hover.black {
   background-color: #1a1a1a;
 }
 @media (max-width: 768px) {
-  /* line 255, ../scss/screen.scss */
+  /* line 255, ../scss/screen (laeh’s iMac's conflicted copy 2015-04-03).scss */
   #colors {
     margin-top: 20px;
     padding: 0;
   }
-  /* line 308, ../scss/screen.scss */
+  /* line 308, ../scss/screen (laeh’s iMac's conflicted copy 2015-04-03).scss */
   #colors .color {
     margin: 0;
     width: 16px;
@@ -907,7 +907,7 @@ Style with support for rainbow parens
   }
 }
 
-/* line 317, ../scss/screen.scss */
+/* line 317, ../scss/screen (laeh’s iMac's conflicted copy 2015-04-03).scss */
 .slideshow {
   position: absolute;
   height: 100%;
@@ -915,7 +915,7 @@ Style with support for rainbow parens
   top: 0;
   left: 0;
 }
-/* line 320, ../scss/screen.scss */
+/* line 320, ../scss/screen (laeh’s iMac's conflicted copy 2015-04-03).scss */
 .slideshow .slideWrap {
   position: absolute;
   top: 0px;
@@ -925,11 +925,11 @@ Style with support for rainbow parens
   -webkit-filter: blur(0);
   overflow: hidden;
 }
-/* line 328, ../scss/screen.scss */
+/* line 328, ../scss/screen (laeh’s iMac's conflicted copy 2015-04-03).scss */
 .slideshow .slideWrap.blur {
   -webkit-filter: blur(0px);
 }
-/* line 331, ../scss/screen.scss */
+/* line 331, ../scss/screen (laeh’s iMac's conflicted copy 2015-04-03).scss */
 .slideshow .slideWrap .slide {
   opacity: 1;
   position: absolute;
@@ -979,17 +979,17 @@ Style with support for rainbow parens
   -webkit-transition-timing-function: ease;
   transition-timing-function: ease;
 }
-/* line 342, ../scss/screen.scss */
+/* line 342, ../scss/screen (laeh’s iMac's conflicted copy 2015-04-03).scss */
 .slideshow .slideWrap .slide i.wait {
   color: black;
   margin-top: 30%;
   font-size: 64px;
 }
-/* line 351, ../scss/screen.scss */
+/* line 351, ../scss/screen (laeh’s iMac's conflicted copy 2015-04-03).scss */
 .slideshow .slideWrap .slide.blur {
   -webkit-filter: blur(0px);
 }
-/* line 355, ../scss/screen.scss */
+/* line 355, ../scss/screen (laeh’s iMac's conflicted copy 2015-04-03).scss */
 .slideshow .slideWrap .slide.old {
   -moz-transition-property: all;
   -o-transition-property: all;
@@ -1005,7 +1005,7 @@ Style with support for rainbow parens
   transition-timing-function: ease;
   opacity: 0;
 }
-/* line 360, ../scss/screen.scss */
+/* line 360, ../scss/screen (laeh’s iMac's conflicted copy 2015-04-03).scss */
 .slideshow .slideWrap .slide.current {
   z-index: 10;
   -moz-transition-property: all;
@@ -1022,7 +1022,7 @@ Style with support for rainbow parens
   transition-timing-function: ease;
   opacity: 1;
 }
-/* line 366, ../scss/screen.scss */
+/* line 366, ../scss/screen (laeh’s iMac's conflicted copy 2015-04-03).scss */
 .slideshow .slideWrap .slide.next {
   -moz-transition-property: all;
   -o-transition-property: all;

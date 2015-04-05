@@ -28,8 +28,8 @@ html
             .screen
                 //- #display
                 #display
-                    .content
-                        .slideshow
+                    .slideshow
+                    .wall
                 #menu
                     //- #LA LA
                     #modes
@@ -71,6 +71,9 @@ html
                         .btn.tag.black.color&attributes({'data-id':'black'})
                             .left
                             .right
+                        //- a(class='button madbits', href='http://www.madbits.com', target="_blank")
+                        //-         i.icon.fa.fa-road
+                        //-         p Work
 
             #name Louis-Alexandre Etezad-Heydari
             #logo
@@ -96,6 +99,14 @@ html
             //- ╔══════════════════════════════════════════╗
             //- ║                                          ║
             //- ╚══════════════════════════════════════════╝
+            $wall = $('.wall')
+            //- for (var i = 0; i < 80; i++) {
+            //-     var $box = $('<div>').addClass('box');
+            //-     $box.appendTo($wall);
+            //- }
+            //- ╔══════════════════════════════════════════╗
+            //- ║                                          ║
+            //- ╚══════════════════════════════════════════╝
 
             var s = '1000'
             //- MIN & MAX
@@ -116,6 +127,11 @@ html
                 var urls = [];
                 for(var i = 0; i < imagesMap[key].length; i++) {
                     // an image id is 4 characters (ex: 00001, 00099)
+
+                    //- ADD boxes
+                    var $box = $('<div>').addClass('box');
+                    $box.appendTo($wall);
+
                     var nZero = 5 - imagesMap[key][i].toString().length;
                     var nZero = 0
 

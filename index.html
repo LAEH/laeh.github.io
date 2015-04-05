@@ -22,9 +22,8 @@
     <div class="viewport">
       <div class="screen">
         <div id="display">
-          <div class="content">
-            <div class="slideshow"></div>
-          </div>
+          <div class="slideshow"></div>
+          <div class="wall"></div>
         </div>
         <div id="menu">
           <div id="modes">
@@ -104,6 +103,14 @@
         //- ╔══════════════════════════════════════════╗
         //- ║                                          ║
         //- ╚══════════════════════════════════════════╝
+        $wall = $('.wall')
+        //- for (var i = 0; i < 80; i++) {
+        //-     var $box = $('<div>').addClass('box');
+        //-     $box.appendTo($wall);
+        //- }
+        //- ╔══════════════════════════════════════════╗
+        //- ║                                          ║
+        //- ╚══════════════════════════════════════════╝
         
         var s = '1000'
         //- MIN & MAX
@@ -124,6 +131,11 @@
             var urls = [];
             for(var i = 0; i < imagesMap[key].length; i++) {
                 // an image id is 4 characters (ex: 00001, 00099)
+                
+                //- ADD boxes
+                var $box = $('<div>').addClass('box');
+                $box.appendTo($wall);
+                
                 var nZero = 5 - imagesMap[key][i].toString().length;
                 var nZero = 0
                 
