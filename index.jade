@@ -20,7 +20,7 @@ html
     script(type="text/javascript" src="js/hue.js")
     script(type="text/javascript" src="js/dim.js")
     script(type="text/javascript" src="js/display_modules.js")
-    script(type="text/javascript" src="assets/myDummyJSON.js")
+    script(type="text/javascript" src="js/images.json")
 
     title LAEH
     body
@@ -28,49 +28,67 @@ html
             .screen
                 //- #display
                 #display
-                    .slideshow
-                    .wall
+                    .content
+                        .slideshow
+                        .wall
                 #menu
                     //- #LA LA
                     #modes
+
+                        photo
+                        composition.elements
+                        photo.vehicles
+                        photo.lightlife
+                        composition.couleur
+                        photo.animals
+                        photo.scenes
+                        photo.crownvictoria
+                        photo.dirt
+                        pixels.mad
+                        photo.vivid
+                        composition.noir
+                        photo.contrast
+                        colors.pink
                         .btn.active&attributes({'data-mode': 'slide'}) SLIDESHOW
                         .btn.inactive&attributes({'data-mode': 'scroll'}) SCROLL
                     #tags
                         .btn.active&attributes({'data-id': 'all'}) LA
                         .vspacing
-                        .btn.tag.inactive&attributes({'data-id': 'enveloppe'})  CLASS
-                        .btn.tag.inactive&attributes({'data-id': 'large'})      COMPOSITON
-                        .btn.tag.inactive&attributes({'data-id': 'arto'})       SYSTEM
+                        .btn.inactive&attributes({'data-id': 'photo'})                     photo
+                        .btn.inactive&attributes({'data-id': 'photo.dirt'})                photo.dirt
+                        .btn.inactive&attributes({'data-id': 'photo.vivid'})               photo.vivid
+                        .btn.inactive&attributes({'data-id': 'photo.scenes'})              photo.scenes
+                        .btn.inactive&attributes({'data-id': 'photo.animals'})             photo.animals
+                        .btn.inactive&attributes({'data-id': 'photo.contrast'})            photo.contrast
+                        .btn.inactive&attributes({'data-id': 'photo.vehicles'})            photo.vehicles
+                        .btn.inactive&attributes({'data-id': 'photo.lightlife'})           photo.lightlife
+                        .btn.inactive&attributes({'data-id': 'photo.crownvictoria'})       photo.crownvictoria
                         .vspacing
-                        .btn.inactive&attributes({'data-id': 'processed'})      #MADPIXELS
-                        .btn.inactive&attributes({'data-id': 'people'})         #CHARACTERS
-                        .btn.inactive&attributes({'data-id': 'light'})          #ILOVELIGHT
+                        .btn.inactive&attributes({'data-id': 'composition.elements'})      composition.elements
+                        .btn.inactive&attributes({'data-id': 'composition.couleur'})       composition.couleur
+                        .btn.inactive&attributes({'data-id': 'composition.noir'})          composition.noir
                         .vspacing
+                        .btn.inactive&attributes({'data-id': 'pixels.mad'})                pixels.mad
                     #colors
-                        .btn.tag.yellow.color&attributes({'data-id':'yellow'})
+                        .btn.tag.green.color&attributes({'data-id':'color.green'})
                             .left
                             .right
-                        .btn.tag.orange.color&attributes({'data-id':'orange'})
+                        .btn.tag.orange.color&attributes({'data-id':'color.orange'})
                             .left
                             .right
-                        .btn.tag.red.color&attributes({'data-id':'red'})
+                        .btn.tag.cyan.color&attributes({'data-id':'color.cyan'})
                             .left
                             .right
-                        .btn.tag.pink.color&attributes({'data-id':'pink'})
+                        .btn.tag.yellow.color&attributes({'data-id':'color.yellow'})
                             .left
                             .right
-                        .btn.tag.blue.color&attributes({'data-id':'blue'})
+                        .btn.tag.blue.color&attributes({'data-id':'color.blue'})
                             .left
                             .right
-                        .btn.tag.cyan.color&attributes({'data-id':'cyan'})
+                        .btn.tag.pink.color&attributes({'data-id':'color.pink'})
                             .left
                             .right
-                        .btn.tag.green.color&attributes({'data-id':'green'})
-                            .left
-                            .right
-                        .btn.tag.black.color&attributes({'data-id':'black'})
-                            .left
-                            .right
+
                         //- a(class='button madbits', href='http://www.madbits.com', target="_blank")
                         //-         i.icon.fa.fa-road
                         //-         p Work
@@ -99,27 +117,31 @@ html
             //- ╔══════════════════════════════════════════╗
             //- ║                                          ║
             //- ╚══════════════════════════════════════════╝
-            $wall = $('.wall')
-            //- for (var i = 0; i < 80; i++) {
-            //-     var $box = $('<div>').addClass('box');
-            //-     $box.appendTo($wall);
-            //- }
-            //- ╔══════════════════════════════════════════╗
-            //- ║                                          ║
-            //- ╚══════════════════════════════════════════╝
 
             var s = '1000'
             //- MIN & MAX
             var w = $('.slideshow').width()
             var h = $('.slideshow').height()
-            if ( w  < 400  || doch < 400  ){  s = '400';}
-            if ( w  > 1000 || w  > 1000 ){ s = '1000';}
+            if ( w  < 100  || doch < 400  ){  s = '400';}
+            if ( w  > 2000 || w  > 2000 ){ s = '2000';}
 
-            if ( (w  > 400 && w <600)   || (w  > 400 && w  <600) )   { s = '600';}
-            if ( (w  > 600 && w <800)   || (w  > 600 && w  <800) )   { s = '800';}
-            if ( (w  > 800 && w <1000)  || (w  > 800 && w  <1000) )  { s = '1000';}
-
-            var baseUrl = 'https://dl.dropboxusercontent.com/u/233335115/images/laeh.io/set/' + s + '/';
+            if ( (w>100 && w<200)   || (h>100 && h<200))   { s = '200';}
+            if ( (w>200 && w<300)   || (h>200 && h<300))   { s = '300';}
+            if ( (w>300 && w<300)   || (h>300 && h<300))   { s = '300';}
+            if ( (w>400 && w<600)   || (h>400 && h<600))   { s = '600';}
+            if ( (w>500 && w<600)   || (h>500 && h<600))   { s = '700';}
+            if ( (w>600 && w<800)   || (h>600 && h<800))   { s = '800';}
+            if ( (w>600 && w<800)   || (h>600 && h<800))   { s = '900';}
+            if ( (w>800 && w<1000)  || (h>800 && h<1000))  { s = '1000';}
+            if ( (w>800 && w<1000)  || (h>800 && h<1000))  { s = '1200';}
+            if ( (w>800 && w<1000)  || (h>800 && h<1000))  { s = '1300';}
+            if ( (w>800 && w<1000)  || (h>800 && h<1000))  { s = '1300';}
+            if ( (w>800 && w<1000)  || (h>800 && h<1000))  { s = '1600';}
+            if ( (w>800 && w<1000)  || (h>800 && h<1000))  { s = '1700';}
+            if ( (w>800 && w<1000)  || (h>800 && h<1000))  { s = '1800';}
+            if ( (w>800 && w<1000)  || (h>800 && h<1000))  { s = '1900';}
+            if ( (w>800 && w<1000)  || (h>800 && h<1000))  { s = '2000';}
+            var baseUrl = 'https://dl.dropboxusercontent.com/u/233335115/images/laeh.io/sizes/' + s + '/';
             var ext = '.jpg';
 
             // Format imagesMap generation
@@ -127,10 +149,6 @@ html
                 var urls = [];
                 for(var i = 0; i < imagesMap[key].length; i++) {
                     // an image id is 4 characters (ex: 00001, 00099)
-
-                    //- ADD boxes
-                    var $box = $('<div>').addClass('box');
-                    $box.appendTo($wall);
 
                     var nZero = 5 - imagesMap[key][i].toString().length;
                     var nZero = 0
@@ -193,7 +211,7 @@ html
             };
 
             // Change the mode for the current tag
-            $('#modes .btn').click(function(e) {
+            $('#modes .btn').click(function(    e) {
                 e.stopPropagation();
 
                 var mode = $(this).data('mode');
@@ -225,3 +243,25 @@ html
                 $('.menu').toggleClass('hidden');
             });
         });
+
+
+//- amaheswaran@twitter.com
+//- clmnt@twitter.com
+//- conall@twitter.com>
+//- dhasegan@twitter.com
+//- kquennesson@twitter.com
+//- lalonso@twitter.com
+//- mmalin@twitter.com
+//- nimalan@twitter.com
+//- nkoumchatzky@twitter.com
+//- sngahane@twitter.com
+//- sreddy@twitter.com
+//- xianw@twitter.com
+//- ztaylor@twitter.com
+
+
+
+
+
+
+

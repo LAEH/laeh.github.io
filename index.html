@@ -16,62 +16,77 @@
   <script type="text/javascript" src="js/hue.js"></script>
   <script type="text/javascript" src="js/dim.js"></script>
   <script type="text/javascript" src="js/display_modules.js"></script>
-  <script type="text/javascript" src="assets/myDummyJSON.js"></script>
+  <script type="text/javascript" src="js/images.json"></script>
   <title>LAEH</title>
   <body>
     <div class="viewport">
       <div class="screen">
         <div id="display">
-          <div class="slideshow"></div>
-          <div class="wall"></div>
+          <div class="content">
+            <div class="slideshow"></div>
+            <div class="wall"></div>
+          </div>
         </div>
         <div id="menu">
           <div id="modes">
+            <photo></photo>
+            <composition class="elements"></composition>
+            <photo class="vehicles"></photo>
+            <photo class="lightlife"></photo>
+            <composition class="couleur"></composition>
+            <photo class="animals"></photo>
+            <photo class="scenes"></photo>
+            <photo class="crownvictoria"></photo>
+            <photo class="dirt"></photo>
+            <pixels class="mad"></pixels>
+            <photo class="vivid"></photo>
+            <composition class="noir"></composition>
+            <photo class="contrast"></photo>
+            <colors class="pink"></colors>
             <div class="btn active" data-mode="slide">SLIDESHOW</div>
             <div class="btn inactive" data-mode="scroll">SCROLL</div>
           </div>
           <div id="tags">
             <div class="btn active" data-id="all">LA</div>
             <div class="vspacing"></div>
-            <div class="btn tag inactive" data-id="enveloppe"> CLASS</div>
-            <div class="btn tag inactive" data-id="large">     COMPOSITON</div>
-            <div class="btn tag inactive" data-id="arto">      SYSTEM</div>
+            <div class="btn inactive" data-id="photo">                    photo</div>
+            <div class="btn inactive" data-id="photo.dirt">               photo.dirt</div>
+            <div class="btn inactive" data-id="photo.vivid">              photo.vivid</div>
+            <div class="btn inactive" data-id="photo.scenes">             photo.scenes</div>
+            <div class="btn inactive" data-id="photo.animals">            photo.animals</div>
+            <div class="btn inactive" data-id="photo.contrast">           photo.contrast</div>
+            <div class="btn inactive" data-id="photo.vehicles">           photo.vehicles</div>
+            <div class="btn inactive" data-id="photo.lightlife">          photo.lightlife</div>
+            <div class="btn inactive" data-id="photo.crownvictoria">      photo.crownvictoria</div>
             <div class="vspacing"></div>
-            <div class="btn inactive" data-id="processed">     #MADPIXELS</div>
-            <div class="btn inactive" data-id="people">        #CHARACTERS</div>
-            <div class="btn inactive" data-id="light">         #ILOVELIGHT</div>
+            <div class="btn inactive" data-id="composition.elements">     composition.elements</div>
+            <div class="btn inactive" data-id="composition.couleur">      composition.couleur</div>
+            <div class="btn inactive" data-id="composition.noir">         composition.noir</div>
             <div class="vspacing"></div>
+            <div class="btn inactive" data-id="pixels.mad">               pixels.mad</div>
           </div>
           <div id="colors">
-            <div class="btn tag yellow color" data-id="yellow">
+            <div class="btn tag green color" data-id="color.green">
               <div class="left"></div>
               <div class="right"></div>
             </div>
-            <div class="btn tag orange color" data-id="orange">
+            <div class="btn tag orange color" data-id="color.orange">
               <div class="left"></div>
               <div class="right"></div>
             </div>
-            <div class="btn tag red color" data-id="red">
+            <div class="btn tag cyan color" data-id="color.cyan">
               <div class="left"></div>
               <div class="right"></div>
             </div>
-            <div class="btn tag pink color" data-id="pink">
+            <div class="btn tag yellow color" data-id="color.yellow">
               <div class="left"></div>
               <div class="right"></div>
             </div>
-            <div class="btn tag blue color" data-id="blue">
+            <div class="btn tag blue color" data-id="color.blue">
               <div class="left"></div>
               <div class="right"></div>
             </div>
-            <div class="btn tag cyan color" data-id="cyan">
-              <div class="left"></div>
-              <div class="right"></div>
-            </div>
-            <div class="btn tag green color" data-id="green">
-              <div class="left"></div>
-              <div class="right"></div>
-            </div>
-            <div class="btn tag black color" data-id="black">
+            <div class="btn tag pink color" data-id="color.pink">
               <div class="left"></div>
               <div class="right"></div>
             </div>
@@ -103,27 +118,31 @@
         //- ╔══════════════════════════════════════════╗
         //- ║                                          ║
         //- ╚══════════════════════════════════════════╝
-        $wall = $('.wall')
-        //- for (var i = 0; i < 80; i++) {
-        //-     var $box = $('<div>').addClass('box');
-        //-     $box.appendTo($wall);
-        //- }
-        //- ╔══════════════════════════════════════════╗
-        //- ║                                          ║
-        //- ╚══════════════════════════════════════════╝
         
         var s = '1000'
         //- MIN & MAX
         var w = $('.slideshow').width()
         var h = $('.slideshow').height()
-        if ( w  < 400  || doch < 400  ){  s = '400';}
-        if ( w  > 1000 || w  > 1000 ){ s = '1000';}
+        if ( w  < 100  || doch < 400  ){  s = '400';}
+        if ( w  > 2000 || w  > 2000 ){ s = '2000';}
         
-        if ( (w  > 400 && w <600)   || (w  > 400 && w  <600) )   { s = '600';}
-        if ( (w  > 600 && w <800)   || (w  > 600 && w  <800) )   { s = '800';}
-        if ( (w  > 800 && w <1000)  || (w  > 800 && w  <1000) )  { s = '1000';}
-        
-        var baseUrl = 'https://dl.dropboxusercontent.com/u/233335115/images/laeh.io/set/' + s + '/';
+        if ( (w>100 && w<200)   || (h>100 && h<200))   { s = '200';}
+        if ( (w>200 && w<300)   || (h>200 && h<300))   { s = '300';}
+        if ( (w>300 && w<300)   || (h>300 && h<300))   { s = '300';}
+        if ( (w>400 && w<600)   || (h>400 && h<600))   { s = '600';}
+        if ( (w>500 && w<600)   || (h>500 && h<600))   { s = '700';}
+        if ( (w>600 && w<800)   || (h>600 && h<800))   { s = '800';}
+        if ( (w>600 && w<800)   || (h>600 && h<800))   { s = '900';}
+        if ( (w>800 && w<1000)  || (h>800 && h<1000))  { s = '1000';}
+        if ( (w>800 && w<1000)  || (h>800 && h<1000))  { s = '1200';}
+        if ( (w>800 && w<1000)  || (h>800 && h<1000))  { s = '1300';}
+        if ( (w>800 && w<1000)  || (h>800 && h<1000))  { s = '1300';}
+        if ( (w>800 && w<1000)  || (h>800 && h<1000))  { s = '1600';}
+        if ( (w>800 && w<1000)  || (h>800 && h<1000))  { s = '1700';}
+        if ( (w>800 && w<1000)  || (h>800 && h<1000))  { s = '1800';}
+        if ( (w>800 && w<1000)  || (h>800 && h<1000))  { s = '1900';}
+        if ( (w>800 && w<1000)  || (h>800 && h<1000))  { s = '2000';}
+        var baseUrl = 'https://dl.dropboxusercontent.com/u/233335115/images/laeh.io/sizes/' + s + '/';
         var ext = '.jpg';
         
         // Format imagesMap generation
@@ -131,10 +150,6 @@
             var urls = [];
             for(var i = 0; i < imagesMap[key].length; i++) {
                 // an image id is 4 characters (ex: 00001, 00099)
-                
-                //- ADD boxes
-                var $box = $('<div>').addClass('box');
-                $box.appendTo($wall);
                 
                 var nZero = 5 - imagesMap[key][i].toString().length;
                 var nZero = 0
@@ -197,7 +212,7 @@
         };
         
         // Change the mode for the current tag
-        $('#modes .btn').click(function(e) {
+        $('#modes .btn').click(function(    e) {
             e.stopPropagation();
             
             var mode = $(this).data('mode');
@@ -229,5 +244,7 @@
             $('.menu').toggleClass('hidden');
         });
     });
+    
+    
   </script>
 </html>

@@ -73,6 +73,7 @@
    left:0;
    width:calc(100% - #{$menu});
    height: 100%;
+   padding-top: 80px;
    background-color: $testcolor;
    overflow: scroll;
 
@@ -81,7 +82,7 @@
      top: $slide_h;
      left: calc(50% - #{$w/2});
      width: $w;
-     // height: $h;
+     height: $h;
       background-color: darken($testcolor, 20);
    }
    .slideshow {
@@ -90,7 +91,7 @@
         height: 100%;
       }
       position: absolute;
-      top:  0;
+      top:  10%;
       left: 0;
       width: 100%;
       height: $slide_h;
