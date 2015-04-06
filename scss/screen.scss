@@ -66,6 +66,7 @@
    margin-right: 4px;
    margin-top: 4px;
    background-color: #f2f2f2;
+   background-color: darken($testcolor, 20);
 }
 #display {
    position: absolute;
@@ -84,6 +85,16 @@
      width: $w;
      height: $h;
       background-color: darken($testcolor, 20);
+      .box {
+         display: inline-block;
+         position: relative;
+         width: 140px;
+         height: 180px;
+         margin-right: 4px;
+         margin-top: 4px;
+         background-color: #f2f2f2;
+         background-color: darken($testcolor, 20);
+      }
    }
    .slideshow {
       img {
