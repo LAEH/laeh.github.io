@@ -1,13 +1,6 @@
 
 @import "compass/reset";
 @import "compass/css3";
-
-
-/*
-╔══════════════════════════════════════════╗
-║                                          ║
-╚══════════════════════════════════════════╝
-*/
 body, html {
    text-align: center;
    top: 0;
@@ -44,18 +37,28 @@ form, input, textarea, div, span,ul,li, i, p, a, :link, :visited {
     vertical-align: middle;
 }
 
+
+
+
+
+
+
+$slide_h: 620px;
+$boxw: 140px;
+$boxh: 180px;
+$menu:160px;
+$t:  60px;
+$h : 100%;
+$w : 100%;
+$blur:0px;
+
+
 $tb:45px;
 $base: #fff;
 $contrast: #111;
 $br:0px;
 $m:0px;
-// $testcolor: $blue;
-$slide_h: 620px;
-$menu:160px;
-$t:  60px;
-$blur:0px;
-$h : 100%;
-$w : 100%;
+
 
 $base10: #F6F6F8;
 $grey: #999999;

@@ -3,6 +3,14 @@
 @import "base";
 @import "code";
 
+.btn{
+   cursor: pointer;
+   @include anim-medium();
+   &:hover {
+      cursor: pointer;
+      @include anim-medium();
+   }
+}
 
 .viewport {
    position: fixed;
@@ -13,38 +21,15 @@
    background-color: $base;
    @include anim-slow();
    border-radius: $br;
-
 }
 
-#mask {
-   @include absolute_fill;
-   display: block;
-   background-color: rgba(white,.96);
-
-   &.hidden {
-     display: none;
-   }
-}
-
-
-.wall .img.i1{background-image:url('https://dl.dropboxusercontent.com/u/233335115/images/laeh.io/sizes/300/2.jpg')}
-.wall .img.i2{background-image:url('https://dl.dropboxusercontent.com/u/233335115/images/laeh.io/sizes/300/5.jpg')}
-.wall .img.i3{background-image:url('https://dl.dropboxusercontent.com/u/233335115/images/laeh.io/sizes/300/3.jpg')}
-.wall .img.i4{background-image:url('https://dl.dropboxusercontent.com/u/233335115/images/laeh.io/sizes/300/8.jpg')}
-
-/*═══════════════╗
-║                ║
-╚═══════════════*/
 .screen {
    position: relative;
    display: inline-block;
-   // margin-top:$t;
    width: 90%;
    height: 100%;
    padding-top: 10%;
    max-width: 1120px;
-   // background-color: $testcolor;
-   // overflow: hidden;
 
    &.scroll {
       margin:0;
@@ -69,26 +54,23 @@
    left:0;
    width:calc(100% - #{$menu});
    height: 100%;
-   padding-top: 80px;
-   // background-color: $testcolor;
    overflow: scroll;
 
    .wall {
       position: absolute;
-     top: $slide_h + $t;
+     top: $slide_h + $t + 20px;
      left: calc(50% - #{$w/2});
      width: $w;
      height: $h;
-      // background-color: darken($testcolor, 20);
+
       .box {
          display: inline-block;
          position: relative;
-         width: 140px;
-         height: 180px;
+         width: $boxw;
+         height: $boxw;
          margin-right: 4px;
          margin-top: 4px;
          background-size: fill;
-         // background-color: $base10;
 
          .img {
             @include absolute_fill;
@@ -98,15 +80,10 @@
 
 
          }
-         // background-color: darken($testcolor, 30);
       }
    }
 
    .slideshow {
-      img {
-        width: 100%;
-        height: 100%;
-      }
       position: absolute;
       top:  $t;
       left: 0;
@@ -134,6 +111,10 @@
             background-size: contain;
             @include anim-medium;
             @include ontouch;
+            img {
+              width: 100%;
+              height: 100%;
+            }
 
             i.wait {
                // position: relative;
@@ -189,19 +170,6 @@
       height:1$t;
      // background-color: #000024;
   }
-}
-
-/*═══════════════╗
-║                ║
-╚═══════════════*/
-
-.btn {
-   cursor: pointer;
-   @include anim-medium();
-   &:hover {
-      cursor: pointer;
-      @include anim-medium();
-   }
 }
 
 #name {
@@ -273,18 +241,6 @@
       right: 0;
       height: 100%
   }
-}
-
-#LA {
-   position: relative;
-   display: block;
-   float: left;
-   width: $menu;
-   font-size: 64px;
-   color: #000024;
-   font-family: $blak;
-   text-align: left;
-   // background-color: darken($testcolor, 20);
 }
 
 #tags {
@@ -400,12 +356,24 @@
   }
 }
 
+#mask {
+   @include absolute_fill;
+   display: block;
+   background-color: rgba(white,.96);
 
-/*═══════════════╗
-║                ║
-╚═══════════════*/
+   &.hidden {
+     display: none;
+   }
+}
 
-// .scrollwall {
-//   @include absolute_fill;
-// }
-
+#LA {
+   position: relative;
+   display: block;
+   float: left;
+   width: $menu;
+   font-size: 64px;
+   color: #000024;
+   font-family: $blak;
+   text-align: left;
+   // background-color: darken($testcolor, 20);
+}

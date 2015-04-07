@@ -26,31 +26,12 @@ html
     body
         .viewport
             .screen
-                //- #display
                 #display
                     .content
                         .slideshow
                         .wall
                 #menu
-                    //- #LA LA
                     #modes
-
-                        photo
-
-
-                        composition.elements
-                        photo.vehicles
-                        photo.lightlife
-                        composition.couleur
-                        photo.animals
-                        photo.scenes
-                        photo.crownvictoria
-                        photo.dirt
-                        pixels.mad
-                        photo.vivid
-                        composition.noir
-                        photo.contrast
-                        colors.pink
                         .btn.active&attributes({'data-mode': 'slide'}) SLIDESHOW
                         .btn.inactive&attributes({'data-mode': 'scroll'}) SCROLL
                     #tags
@@ -111,12 +92,14 @@ html
             //- ╚══════════════════════════════════════════╝
             var base = 'https://dl.dropboxusercontent.com/u/233335115/images/laeh.io/sizes/300/';
             $wall = $('.wall')
+            var allstars = imagesMap["composition.elements"]
+
+            allstars = _.shuffle(allstars)
             for(var i = 1; i <17; i++) {
                 $box = $('<div>',{'class': 'box'});
                 $img = $('<div>',{'class': 'img'});
-                var no = _.shuffle(_.range(1,100))[1]
-                console.log(no)
-                var url = base+'1'+no+'.jpg'
+                var idx = allstars[i]
+                var url = base+idx+'.jpg'
                 $img.css({
                     'background-image' : 'url(' + url + ')',
                 });

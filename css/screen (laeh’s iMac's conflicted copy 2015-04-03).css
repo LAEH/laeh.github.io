@@ -129,12 +129,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/*
-╔══════════════════════════════════════════╗
-║                                          ║
-╚══════════════════════════════════════════╝
-*/
-/* line 11, ../scss/_base.scss */
+/* line 4, ../scss/_base.scss */
 body, html {
   text-align: center;
   top: 0;
@@ -149,7 +144,7 @@ body, html {
   text-rendering: optimizeLegibility;
 }
 
-/* line 27, ../scss/_base.scss */
+/* line 20, ../scss/_base.scss */
 *,
 *:before,
 *:after {
@@ -162,7 +157,7 @@ body, html {
   -moz-tap-highlight-color: transparent;
 }
 
-/* line 37, ../scss/_base.scss */
+/* line 30, ../scss/_base.scss */
 form, input, textarea, div, span, ul, li, i, p, a, :link, :visited {
   text-align: center;
   text-decoration: none;
@@ -173,15 +168,15 @@ form, input, textarea, div, span, ul, li, i, p, a, :link, :visited {
   vertical-align: middle;
 }
 
-/* line 107, ../scss/_base.scss */
+/* line 110, ../scss/_base.scss */
 .img {
   -webkit-filter: blur(0px);
 }
-/* line 109, ../scss/_base.scss */
+/* line 112, ../scss/_base.scss */
 .img:hover {
   cursor: pointer;
 }
-/* line 113, ../scss/_base.scss */
+/* line 116, ../scss/_base.scss */
 .img.blur {
   -webkit-filter: blur(12px);
 }
@@ -676,7 +671,7 @@ Style with support for rainbow parens
   cursor: pointer;
   color: #676767;
 }
-/* line 123, ../scss/_base.scss */
+/* line 126, ../scss/_base.scss */
 #tags .btn:active {
   opacity: .6;
   -moz-transition-property: opacity;
@@ -720,7 +715,7 @@ Style with support for rainbow parens
   transition-timing-function: ease;
   color: black;
 }
-/* line 123, ../scss/_base.scss */
+/* line 126, ../scss/_base.scss */
 #tags .btn:hover:active {
   opacity: .6;
   -moz-transition-property: opacity;
@@ -844,7 +839,7 @@ Style with support for rainbow parens
   -webkit-transition-timing-function: ease;
   transition-timing-function: ease;
 }
-/* line 123, ../scss/_base.scss */
+/* line 126, ../scss/_base.scss */
 #colors .btn.color:hover:active {
   opacity: .6;
   -moz-transition-property: opacity;
@@ -963,7 +958,7 @@ Style with support for rainbow parens
   -webkit-transition-timing-function: ease;
   transition-timing-function: ease;
 }
-/* line 123, ../scss/_base.scss */
+/* line 126, ../scss/_base.scss */
 .slideshow .slideWrap .slide:active {
   opacity: .6;
   -moz-transition-property: opacity;

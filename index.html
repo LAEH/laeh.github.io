@@ -29,20 +29,6 @@
         </div>
         <div id="menu">
           <div id="modes">
-            <photo></photo>
-            <composition class="elements"></composition>
-            <photo class="vehicles"></photo>
-            <photo class="lightlife"></photo>
-            <composition class="couleur"></composition>
-            <photo class="animals"></photo>
-            <photo class="scenes"></photo>
-            <photo class="crownvictoria"></photo>
-            <photo class="dirt"></photo>
-            <pixels class="mad"></pixels>
-            <photo class="vivid"></photo>
-            <composition class="noir"></composition>
-            <photo class="contrast"></photo>
-            <colors class="pink"></colors>
             <div class="btn active" data-mode="slide">SLIDESHOW</div>
             <div class="btn inactive" data-mode="scroll">SCROLL</div>
           </div>
@@ -111,12 +97,14 @@
         //- ╚══════════════════════════════════════════╝
         var base = 'https://dl.dropboxusercontent.com/u/233335115/images/laeh.io/sizes/300/';
         $wall = $('.wall')
+        var allstars = imagesMap["composition.elements"]
+        
+        allstars = _.shuffle(allstars)
         for(var i = 1; i <17; i++) {
             $box = $('<div>',{'class': 'box'});
             $img = $('<div>',{'class': 'img'});
-            var no = _.shuffle(_.range(1,100))[1]
-            console.log(no)
-            var url = base+'1'+no+'.jpg'
+            var idx = allstars[i]
+            var url = base+idx+'.jpg'
             $img.css({
                 'background-image' : 'url(' + url + ')',
             });
