@@ -58,7 +58,7 @@
 
    .wall {
       position: absolute;
-     top: $slide_h + $t + 20px;
+     top: $slide_h + $t;
      left: calc(50% - #{$w/2});
      width: $w;
      height: $h;

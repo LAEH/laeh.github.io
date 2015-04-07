@@ -453,7 +453,7 @@ Style with support for rainbow parens
 /* line 59, ../scss/screen.scss */
 #display .wall {
   position: absolute;
-  top: 700px;
+  top: 680px;
   left: calc(50% - 50%);
   width: 100%;
   height: 100%;
