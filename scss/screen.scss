@@ -92,7 +92,7 @@
 
          .img {
             @include absolute_fill;
-            background-position: center;
+            background-position: top center;
             background-repeat: no-repeat;
             background-size: contain;
 
