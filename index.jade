@@ -20,7 +20,7 @@ html
     script(type="text/javascript" src="js/hue.js")
     script(type="text/javascript" src="js/dim.js")
     script(type="text/javascript" src="js/display_modules.js")
-    script(type="text/javascript" src="js/images.json")
+    script(type="text/javascript" src="assets/images.js")
 
     title LAEH
     body
@@ -36,6 +36,8 @@ html
                     #modes
 
                         photo
+
+
                         composition.elements
                         photo.vehicles
                         photo.lightlife
@@ -52,42 +54,47 @@ html
                         .btn.active&attributes({'data-mode': 'slide'}) SLIDESHOW
                         .btn.inactive&attributes({'data-mode': 'scroll'}) SCROLL
                     #tags
-                        .btn.active&attributes({'data-id': 'all'}) LA
-                        .vspacing
+                        .btn.active&attributes({'data-id': 'all'}) ALL
+                        .btn.inactive&attributes({'data-id': 'composition.noir'})          noir
+                        .btn.inactive&attributes({'data-id': 'composition.couleur'})       couleur
+                        .btn.inactive&attributes({'data-id': 'composition.elements'})      elements
                         .btn.inactive&attributes({'data-id': 'photo'})                     photo
-                        .btn.inactive&attributes({'data-id': 'photo.dirt'})                photo.dirt
-                        .btn.inactive&attributes({'data-id': 'photo.vivid'})               photo.vivid
-                        .btn.inactive&attributes({'data-id': 'photo.scenes'})              photo.scenes
-                        .btn.inactive&attributes({'data-id': 'photo.animals'})             photo.animals
-                        .btn.inactive&attributes({'data-id': 'photo.contrast'})            photo.contrast
-                        .btn.inactive&attributes({'data-id': 'photo.vehicles'})            photo.vehicles
-                        .btn.inactive&attributes({'data-id': 'photo.lightlife'})           photo.lightlife
-                        .btn.inactive&attributes({'data-id': 'photo.crownvictoria'})       photo.crownvictoria
+                        .btn.inactive&attributes({'data-id': 'photo.dirt'})                dirt
+                        .btn.inactive&attributes({'data-id': 'photo.vivid'})               vivid
+                        .btn.inactive&attributes({'data-id': 'photo.scenes'})              scenes
+                        .btn.inactive&attributes({'data-id': 'photo.animals'})             animals
+                        .btn.inactive&attributes({'data-id': 'photo.contrast'})            contrast
+                        .btn.inactive&attributes({'data-id': 'photo.vehicles'})            vehicles
+                        .btn.inactive&attributes({'data-id': 'photo.lightlife'})           lightlife
+                        .btn.inactive&attributes({'data-id': 'photo.crownvictoria'})       crownvictoria
+                        .btn.inactive&attributes({'data-id': 'MADPIXELS'})                 madpixels
                         .vspacing
-                        .btn.inactive&attributes({'data-id': 'composition.elements'})      composition.elements
-                        .btn.inactive&attributes({'data-id': 'composition.couleur'})       composition.couleur
-                        .btn.inactive&attributes({'data-id': 'composition.noir'})          composition.noir
-                        .vspacing
-                        .btn.inactive&attributes({'data-id': 'pixels.mad'})                pixels.mad
                     #colors
+                        .btn.tag.blue.color&attributes({'data-id':'color.blue'})
+                            .left
+                            .right
+                        .btn.tag.cyan.color&attributes({'data-id':'color.cyan'})
+                            .left
+                            .right
                         .btn.tag.green.color&attributes({'data-id':'color.green'})
                             .left
                             .right
                         .btn.tag.orange.color&attributes({'data-id':'color.orange'})
                             .left
                             .right
-                        .btn.tag.cyan.color&attributes({'data-id':'color.cyan'})
-                            .left
-                            .right
                         .btn.tag.yellow.color&attributes({'data-id':'color.yellow'})
                             .left
                             .right
-                        .btn.tag.blue.color&attributes({'data-id':'color.blue'})
+                        .btn.tag.red.color&attributes({'data-id':'color.pink'})
                             .left
                             .right
                         .btn.tag.pink.color&attributes({'data-id':'color.pink'})
                             .left
                             .right
+                        .btn.tag.black.color&attributes({'data-id':'color.green'})
+                            .left
+                            .right
+
 
                         //- a(class='button madbits', href='http://www.madbits.com', target="_blank")
                         //-         i.icon.fa.fa-road
@@ -102,11 +109,18 @@ html
             //- ╔══════════════════════════════════════════╗
             //- ║                                          ║
             //- ╚══════════════════════════════════════════╝
-
+            var base = 'https://dl.dropboxusercontent.com/u/233335115/images/laeh.io/sizes/300/';
             $wall = $('.wall')
-            for(var i = 0; i <100; i++) {
-                $box = $('<div>',
-                $box.appendTo($wall); {'class': 'box'});
+            for(var i = 1; i <17; i++) {
+                $box = $('<div>',{'class': 'box'});
+                $img = $('<div>',{'class': 'img'});
+                var url = base+i+'.jpg'
+                $img.css({
+                    'background-image' : 'url(' + url + ')',
+                });
+
+                $box.appendTo($wall);
+                $img.appendTo($box);
             }
             //- ╔══════════════════════════════════════════╗
             //- ║                                          ║

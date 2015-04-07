@@ -27,6 +27,10 @@
 }
 
 
+.wall .img.i1{background-image:url('https://dl.dropboxusercontent.com/u/233335115/images/laeh.io/sizes/300/2.jpg')}
+.wall .img.i2{background-image:url('https://dl.dropboxusercontent.com/u/233335115/images/laeh.io/sizes/300/5.jpg')}
+.wall .img.i3{background-image:url('https://dl.dropboxusercontent.com/u/233335115/images/laeh.io/sizes/300/3.jpg')}
+.wall .img.i4{background-image:url('https://dl.dropboxusercontent.com/u/233335115/images/laeh.io/sizes/300/8.jpg')}
 
 /*═══════════════╗
 ║                ║
@@ -34,12 +38,12 @@
 .screen {
    position: relative;
    display: inline-block;
-   // margin-top:60px;
+   // margin-top:$t;
    width: 90%;
    height: 100%;
    padding-top: 10%;
    max-width: 1120px;
-   background-color: $testcolor;
+   // background-color: $testcolor;
    // overflow: hidden;
 
    &.scroll {
@@ -58,16 +62,7 @@
       height:calc(100% - 45px)
   }
 }
-.box {
-   display: inline-block;
-   position: relative;
-   width: 140px;
-   height: 180px;
-   margin-right: 4px;
-   margin-top: 4px;
-   background-color: #f2f2f2;
-   background-color: darken($testcolor, 20);
-}
+
 #display {
    position: absolute;
    top:0;
@@ -75,16 +70,16 @@
    width:calc(100% - #{$menu});
    height: 100%;
    padding-top: 80px;
-   background-color: $testcolor;
+   // background-color: $testcolor;
    overflow: scroll;
 
    .wall {
       position: absolute;
-     top: $slide_h;
+     top: $slide_h + $t;
      left: calc(50% - #{$w/2});
      width: $w;
      height: $h;
-      background-color: darken($testcolor, 20);
+      // background-color: darken($testcolor, 20);
       .box {
          display: inline-block;
          position: relative;
@@ -92,17 +87,28 @@
          height: 180px;
          margin-right: 4px;
          margin-top: 4px;
-         background-color: #f2f2f2;
-         background-color: darken($testcolor, 20);
+         background-size: fill;
+         // background-color: $base10;
+
+         .img {
+            @include absolute_fill;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+
+
+         }
+         // background-color: darken($testcolor, 30);
       }
    }
+
    .slideshow {
       img {
         width: 100%;
         height: 100%;
       }
       position: absolute;
-      top:  10%;
+      top:  $t;
       left: 0;
       width: 100%;
       height: $slide_h;
@@ -133,7 +139,7 @@
                // position: relative;
                // display: inline-block;
                color: black;
-               margin-top: 160px;
+               margin-top: 1$t;
                font-size: 140px;
                opacity: .1;
             }
@@ -170,10 +176,11 @@
    right: 0;
    width: $menu;
    padding-left: 20px;
+   padding-top: $t;
    height: $h;
    border-radius: $br;
    @include anim-medium();
-   background-color: $testcolor;
+   // background-color: $testcolor;
 
    @include reflow(mobile){
       padding-top: 20px;
@@ -181,7 +188,7 @@
       bottom: 0;
       right: 0;
       width: 100%;
-      height:160px;
+      height:1$t;
      // background-color: #000024;
   }
 }
@@ -204,7 +211,7 @@
    top:0;
    left:0;
    height: 20px;
-   width: 160px;
+   width: 1$t;
    padding-left: 10px;
    padding-top: 6px;
    padding-right: 10px;
@@ -224,7 +231,7 @@
       text-align: center;
       position: absolute;
       background-color: rgba(#000024, .8);
-      left: -60px;
+      left: -$t;
       margin:0px;
        transform: rotate(-90deg);
       -ms-transform: rotate(-90deg);
@@ -239,7 +246,7 @@
    height: 80px;
    padding-left: 10px;
    text-align: left;
-   background-color: darken($testcolor, 10);
+   // background-color: darken($testcolor, 10);
 
    .btn {
        position: relative;
@@ -279,7 +286,7 @@
    color: #000024;
    font-family: $blak;
    text-align: left;
-   background-color: darken($testcolor, 20);
+   // background-color: darken($testcolor, 20);
 }
 
 #tags {
@@ -290,7 +297,7 @@
    width: $menu;
    padding-left: 20px;
    text-align: left;
-   background-color: darken($testcolor, 20);
+   // background-color: darken($testcolor, 20);
 
    @include reflow(mobile){
       margin-top: 0px;
@@ -316,8 +323,9 @@
       text-align: left;
       width: $menu;
       font-size: 10px;
-      line-height: 13px;
+      line-height: 16px;
       font-family: $light;
+      text-transform: uppercase;
       color: #676767;
 
       &:hover {
@@ -336,7 +344,7 @@
    position: relative;
    float: left;
    width: $menu;
-   background-color: darken($testcolor, 30);
+   // background-color: darken($testcolor, 30);
 
    .btn.color {
       display: block;

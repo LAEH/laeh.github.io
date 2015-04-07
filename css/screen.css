@@ -173,15 +173,15 @@ form, input, textarea, div, span, ul, li, i, p, a, :link, :visited {
   vertical-align: middle;
 }
 
-/* line 103, ../scss/_base.scss */
+/* line 107, ../scss/_base.scss */
 .img {
   -webkit-filter: blur(0px);
 }
-/* line 105, ../scss/_base.scss */
+/* line 109, ../scss/_base.scss */
 .img:hover {
   cursor: pointer;
 }
-/* line 109, ../scss/_base.scss */
+/* line 113, ../scss/_base.scss */
 .img.blur {
   -webkit-filter: blur(12px);
 }
@@ -397,10 +397,30 @@ Style with support for rainbow parens
   display: none;
 }
 
+/* line 30, ../scss/screen.scss */
+.wall .img.i1 {
+  background-image: url("https://dl.dropboxusercontent.com/u/233335115/images/laeh.io/sizes/300/2.jpg");
+}
+
+/* line 31, ../scss/screen.scss */
+.wall .img.i2 {
+  background-image: url("https://dl.dropboxusercontent.com/u/233335115/images/laeh.io/sizes/300/5.jpg");
+}
+
+/* line 32, ../scss/screen.scss */
+.wall .img.i3 {
+  background-image: url("https://dl.dropboxusercontent.com/u/233335115/images/laeh.io/sizes/300/3.jpg");
+}
+
+/* line 33, ../scss/screen.scss */
+.wall .img.i4 {
+  background-image: url("https://dl.dropboxusercontent.com/u/233335115/images/laeh.io/sizes/300/8.jpg");
+}
+
 /*═══════════════╗
 ║                ║
 ╚═══════════════*/
-/* line 34, ../scss/screen.scss */
+/* line 38, ../scss/screen.scss */
 .screen {
   position: relative;
   display: inline-block;
@@ -408,9 +428,8 @@ Style with support for rainbow parens
   height: 100%;
   padding-top: 10%;
   max-width: 1120px;
-  background-color: #3F54D1;
 }
-/* line 45, ../scss/screen.scss */
+/* line 49, ../scss/screen.scss */
 .screen.scroll {
   margin: 0;
   max-width: 5400px;
@@ -422,7 +441,7 @@ Style with support for rainbow parens
   left: 0;
 }
 @media (max-width: 768px) {
-  /* line 34, ../scss/screen.scss */
+  /* line 38, ../scss/screen.scss */
   .screen {
     position: absolute;
     top: 0;
@@ -433,19 +452,7 @@ Style with support for rainbow parens
   }
 }
 
-/* line 61, ../scss/screen.scss */
-.box {
-  display: inline-block;
-  position: relative;
-  width: 140px;
-  height: 180px;
-  margin-right: 4px;
-  margin-top: 4px;
-  background-color: #f2f2f2;
-  background-color: #213089;
-}
-
-/* line 71, ../scss/screen.scss */
+/* line 66, ../scss/screen.scss */
 #display {
   position: absolute;
   top: 0;
@@ -453,19 +460,17 @@ Style with support for rainbow parens
   width: calc(100% - 160px);
   height: 100%;
   padding-top: 80px;
-  background-color: #3F54D1;
   overflow: scroll;
 }
-/* line 81, ../scss/screen.scss */
+/* line 76, ../scss/screen.scss */
 #display .wall {
   position: absolute;
-  top: 620px;
+  top: 680px;
   left: calc(50% - 50%);
   width: 100%;
   height: 100%;
-  background-color: #213089;
 }
-/* line 88, ../scss/screen.scss */
+/* line 83, ../scss/screen.scss */
 #display .wall .box {
   display: inline-block;
   position: relative;
@@ -473,23 +478,33 @@ Style with support for rainbow parens
   height: 180px;
   margin-right: 4px;
   margin-top: 4px;
-  background-color: #f2f2f2;
-  background-color: #213089;
+  background-size: fill;
 }
-/* line 99, ../scss/screen.scss */
+/* line 93, ../scss/screen.scss */
+#display .wall .box .img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+/* line 105, ../scss/screen.scss */
 #display .slideshow {
   position: absolute;
-  top: 10%;
+  top: 60px;
   left: 0;
   width: 100%;
   height: 620px;
 }
-/* line 100, ../scss/screen.scss */
+/* line 106, ../scss/screen.scss */
 #display .slideshow img {
   width: 100%;
   height: 100%;
 }
-/* line 110, ../scss/screen.scss */
+/* line 116, ../scss/screen.scss */
 #display .slideshow .slideWrap {
   position: absolute;
   top: 0px;
@@ -499,11 +514,11 @@ Style with support for rainbow parens
   -webkit-filter: blur(0);
   overflow: hidden;
 }
-/* line 118, ../scss/screen.scss */
+/* line 124, ../scss/screen.scss */
 #display .slideshow .slideWrap.blur {
   -webkit-filter: blur(0px);
 }
-/* line 121, ../scss/screen.scss */
+/* line 127, ../scss/screen.scss */
 #display .slideshow .slideWrap .slide {
   opacity: 1;
   position: absolute;
@@ -537,7 +552,7 @@ Style with support for rainbow parens
   -webkit-transition-timing-function: ease;
   transition-timing-function: ease;
 }
-/* line 119, ../scss/_base.scss */
+/* line 123, ../scss/_base.scss */
 #display .slideshow .slideWrap .slide:active {
   opacity: .6;
   -moz-transition-property: opacity;
@@ -553,18 +568,18 @@ Style with support for rainbow parens
   -webkit-transition-timing-function: ease;
   transition-timing-function: ease;
 }
-/* line 132, ../scss/screen.scss */
+/* line 138, ../scss/screen.scss */
 #display .slideshow .slideWrap .slide i.wait {
   color: black;
-  margin-top: 160px;
+  margin-top: 1 60px;
   font-size: 140px;
   opacity: .1;
 }
-/* line 142, ../scss/screen.scss */
+/* line 148, ../scss/screen.scss */
 #display .slideshow .slideWrap .slide.blur {
   -webkit-filter: blur(0px);
 }
-/* line 146, ../scss/screen.scss */
+/* line 152, ../scss/screen.scss */
 #display .slideshow .slideWrap .slide.old {
   -moz-transition-property: all;
   -o-transition-property: all;
@@ -580,7 +595,7 @@ Style with support for rainbow parens
   transition-timing-function: ease;
   opacity: 0;
 }
-/* line 151, ../scss/screen.scss */
+/* line 157, ../scss/screen.scss */
 #display .slideshow .slideWrap .slide.current {
   z-index: 10;
   -moz-transition-property: all;
@@ -597,7 +612,7 @@ Style with support for rainbow parens
   transition-timing-function: ease;
   opacity: 1;
 }
-/* line 157, ../scss/screen.scss */
+/* line 163, ../scss/screen.scss */
 #display .slideshow .slideWrap .slide.next {
   -moz-transition-property: all;
   -o-transition-property: all;
@@ -614,13 +629,14 @@ Style with support for rainbow parens
   opacity: 0;
 }
 
-/* line 167, ../scss/screen.scss */
+/* line 173, ../scss/screen.scss */
 #menu {
   position: absolute;
   bottom: calc(50% - 50%);
   right: 0;
   width: 160px;
   padding-left: 20px;
+  padding-top: 60px;
   height: 100%;
   border-radius: 0px;
   -moz-transition-property: all;
@@ -635,24 +651,23 @@ Style with support for rainbow parens
   -o-transition-timing-function: ease;
   -webkit-transition-timing-function: ease;
   transition-timing-function: ease;
-  background-color: #3F54D1;
 }
 @media (max-width: 768px) {
-  /* line 167, ../scss/screen.scss */
+  /* line 173, ../scss/screen.scss */
   #menu {
     padding-top: 20px;
     position: absolute;
     bottom: 0;
     right: 0;
     width: 100%;
-    height: 160px;
+    height: 1 60px;
   }
 }
 
 /*═══════════════╗
 ║                ║
 ╚═══════════════*/
-/* line 193, ../scss/screen.scss */
+/* line 200, ../scss/screen.scss */
 .btn {
   cursor: pointer;
   -moz-transition-property: all;
@@ -668,7 +683,7 @@ Style with support for rainbow parens
   -webkit-transition-timing-function: ease;
   transition-timing-function: ease;
 }
-/* line 196, ../scss/screen.scss */
+/* line 203, ../scss/screen.scss */
 .btn:hover {
   cursor: pointer;
   -moz-transition-property: all;
@@ -685,13 +700,13 @@ Style with support for rainbow parens
   transition-timing-function: ease;
 }
 
-/* line 202, ../scss/screen.scss */
+/* line 209, ../scss/screen.scss */
 #name {
   position: absolute;
   top: 0;
   left: 0;
   height: 20px;
-  width: 160px;
+  width: 1 60px;
   padding-left: 10px;
   padding-top: 6px;
   padding-right: 10px;
@@ -704,7 +719,7 @@ Style with support for rainbow parens
   color: white;
 }
 @media (max-width: 768px) {
-  /* line 202, ../scss/screen.scss */
+  /* line 209, ../scss/screen.scss */
   #name {
     left: 0;
     top: 80px;
@@ -720,7 +735,7 @@ Style with support for rainbow parens
   }
 }
 
-/* line 235, ../scss/screen.scss */
+/* line 242, ../scss/screen.scss */
 #modes {
   position: relative;
   float: left;
@@ -728,9 +743,8 @@ Style with support for rainbow parens
   height: 80px;
   padding-left: 10px;
   text-align: left;
-  background-color: #2b3eb2;
 }
-/* line 244, ../scss/screen.scss */
+/* line 251, ../scss/screen.scss */
 #modes .btn {
   position: relative;
   float: left;
@@ -746,13 +760,13 @@ Style with support for rainbow parens
   background-color: black;
   color: white;
 }
-/* line 259, ../scss/screen.scss */
+/* line 266, ../scss/screen.scss */
 #modes .btn.active {
   background-color: black;
   color: white;
 }
 @media (max-width: 768px) {
-  /* line 235, ../scss/screen.scss */
+  /* line 242, ../scss/screen.scss */
   #modes {
     position: absolute;
     right: 0;
@@ -760,7 +774,7 @@ Style with support for rainbow parens
   }
 }
 
-/* line 273, ../scss/screen.scss */
+/* line 280, ../scss/screen.scss */
 #LA {
   position: relative;
   display: block;
@@ -770,10 +784,9 @@ Style with support for rainbow parens
   color: #000024;
   font-family: "Din-Blak";
   text-align: left;
-  background-color: #213089;
 }
 
-/* line 285, ../scss/screen.scss */
+/* line 292, ../scss/screen.scss */
 #tags {
   position: relative;
   display: block;
@@ -781,10 +794,9 @@ Style with support for rainbow parens
   width: 160px;
   padding-left: 20px;
   text-align: left;
-  background-color: #213089;
 }
 @media (max-width: 768px) {
-  /* line 285, ../scss/screen.scss */
+  /* line 292, ../scss/screen.scss */
   #tags {
     margin-top: 0px;
     width: 100%;
@@ -792,7 +804,7 @@ Style with support for rainbow parens
     padding-right: 20px;
   }
 }
-/* line 303, ../scss/screen.scss */
+/* line 310, ../scss/screen.scss */
 #tags .vspacing {
   position: relative;
   display: inline-block;
@@ -800,41 +812,41 @@ Style with support for rainbow parens
   width: 100%;
 }
 @media (max-width: 768px) {
-  /* line 303, ../scss/screen.scss */
+  /* line 310, ../scss/screen.scss */
   #tags .vspacing {
     height: 0;
   }
 }
-/* line 313, ../scss/screen.scss */
+/* line 320, ../scss/screen.scss */
 #tags .btn {
   position: relative;
   float: left;
   text-align: left;
   width: 160px;
   font-size: 10px;
-  line-height: 13px;
+  line-height: 16px;
   font-family: "Din-Light";
+  text-transform: uppercase;
   color: #676767;
 }
-/* line 323, ../scss/screen.scss */
+/* line 331, ../scss/screen.scss */
 #tags .btn:hover {
   color: black;
   font-family: "Din-Medium";
 }
-/* line 328, ../scss/screen.scss */
+/* line 336, ../scss/screen.scss */
 #tags .btn.active {
   color: black;
   font-family: "Din-Medium";
 }
 
-/* line 335, ../scss/screen.scss */
+/* line 343, ../scss/screen.scss */
 #colors {
   position: relative;
   float: left;
   width: 160px;
-  background-color: #172160;
 }
-/* line 341, ../scss/screen.scss */
+/* line 349, ../scss/screen.scss */
 #colors .btn.color {
   display: block;
   margin-top: 2px;
@@ -851,53 +863,53 @@ Style with support for rainbow parens
   -webkit-transition-timing-function: ease;
   transition-timing-function: ease;
 }
-/* line 347, ../scss/screen.scss */
+/* line 355, ../scss/screen.scss */
 #colors .btn.color.blue .left {
   background-color: #3F54D1;
 }
-/* line 348, ../scss/screen.scss */
+/* line 356, ../scss/screen.scss */
 #colors .btn.color.cyan .left {
   background-color: #2cbae7;
 }
-/* line 349, ../scss/screen.scss */
+/* line 357, ../scss/screen.scss */
 #colors .btn.color.green .left {
   background-color: #65b11a;
 }
-/* line 350, ../scss/screen.scss */
+/* line 358, ../scss/screen.scss */
 #colors .btn.color.yellow .left {
   background-color: #FFD52E;
 }
-/* line 351, ../scss/screen.scss */
+/* line 359, ../scss/screen.scss */
 #colors .btn.color.orange .left {
   background-color: #FFA500;
 }
-/* line 352, ../scss/screen.scss */
+/* line 360, ../scss/screen.scss */
 #colors .btn.color.red .left {
   background-color: #ff5533;
 }
-/* line 353, ../scss/screen.scss */
+/* line 361, ../scss/screen.scss */
 #colors .btn.color.pink .left {
   background-color: #fe2973;
 }
-/* line 354, ../scss/screen.scss */
+/* line 362, ../scss/screen.scss */
 #colors .btn.color.black .left {
   background-color: #000000;
 }
-/* line 356, ../scss/screen.scss */
+/* line 364, ../scss/screen.scss */
 #colors .btn.color .left {
   float: left;
   position: relative;
   width: 16px;
   height: 10px;
 }
-/* line 363, ../scss/screen.scss */
+/* line 371, ../scss/screen.scss */
 #colors .btn.color .right {
   float: left;
   position: relative;
   width: 144px;
   height: 10px;
 }
-/* line 371, ../scss/screen.scss */
+/* line 379, ../scss/screen.scss */
 #colors .btn.color:hover {
   -moz-transition-property: all;
   -o-transition-property: all;
@@ -924,7 +936,7 @@ Style with support for rainbow parens
   -webkit-transition-timing-function: ease;
   transition-timing-function: ease;
 }
-/* line 119, ../scss/_base.scss */
+/* line 123, ../scss/_base.scss */
 #colors .btn.color:hover:active {
   opacity: .6;
   -moz-transition-property: opacity;
@@ -940,45 +952,45 @@ Style with support for rainbow parens
   -webkit-transition-timing-function: ease;
   transition-timing-function: ease;
 }
-/* line 374, ../scss/screen.scss */
+/* line 382, ../scss/screen.scss */
 #colors .btn.color:hover.blue {
   background-color: #6879db;
 }
-/* line 375, ../scss/screen.scss */
+/* line 383, ../scss/screen.scss */
 #colors .btn.color:hover.cyan {
   background-color: #5ac9ec;
 }
-/* line 376, ../scss/screen.scss */
+/* line 384, ../scss/screen.scss */
 #colors .btn.color:hover.green {
   background-color: #7edd21;
 }
-/* line 377, ../scss/screen.scss */
+/* line 385, ../scss/screen.scss */
 #colors .btn.color:hover.yellow {
   background-color: #ffdf61;
 }
-/* line 378, ../scss/screen.scss */
+/* line 386, ../scss/screen.scss */
 #colors .btn.color:hover.orange {
   background-color: #ffb733;
 }
-/* line 379, ../scss/screen.scss */
+/* line 387, ../scss/screen.scss */
 #colors .btn.color:hover.red {
   background-color: #ff7f66;
 }
-/* line 380, ../scss/screen.scss */
+/* line 388, ../scss/screen.scss */
 #colors .btn.color:hover.pink {
   background-color: #fe5c94;
 }
-/* line 381, ../scss/screen.scss */
+/* line 389, ../scss/screen.scss */
 #colors .btn.color:hover.black {
   background-color: #1a1a1a;
 }
 @media (max-width: 768px) {
-  /* line 335, ../scss/screen.scss */
+  /* line 343, ../scss/screen.scss */
   #colors {
     margin-top: 20px;
     padding: 0;
   }
-  /* line 388, ../scss/screen.scss */
+  /* line 396, ../scss/screen.scss */
   #colors .color {
     margin: 0;
     width: 16px;

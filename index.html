@@ -16,7 +16,7 @@
   <script type="text/javascript" src="js/hue.js"></script>
   <script type="text/javascript" src="js/dim.js"></script>
   <script type="text/javascript" src="js/display_modules.js"></script>
-  <script type="text/javascript" src="js/images.json"></script>
+  <script type="text/javascript" src="assets/images.js"></script>
   <title>LAEH</title>
   <body>
     <div class="viewport">
@@ -47,25 +47,31 @@
             <div class="btn inactive" data-mode="scroll">SCROLL</div>
           </div>
           <div id="tags">
-            <div class="btn active" data-id="all">LA</div>
-            <div class="vspacing"></div>
+            <div class="btn active" data-id="all">ALL</div>
+            <div class="btn inactive" data-id="composition.noir">         noir</div>
+            <div class="btn inactive" data-id="composition.couleur">      couleur</div>
+            <div class="btn inactive" data-id="composition.elements">     elements</div>
             <div class="btn inactive" data-id="photo">                    photo</div>
-            <div class="btn inactive" data-id="photo.dirt">               photo.dirt</div>
-            <div class="btn inactive" data-id="photo.vivid">              photo.vivid</div>
-            <div class="btn inactive" data-id="photo.scenes">             photo.scenes</div>
-            <div class="btn inactive" data-id="photo.animals">            photo.animals</div>
-            <div class="btn inactive" data-id="photo.contrast">           photo.contrast</div>
-            <div class="btn inactive" data-id="photo.vehicles">           photo.vehicles</div>
-            <div class="btn inactive" data-id="photo.lightlife">          photo.lightlife</div>
-            <div class="btn inactive" data-id="photo.crownvictoria">      photo.crownvictoria</div>
+            <div class="btn inactive" data-id="photo.dirt">               dirt</div>
+            <div class="btn inactive" data-id="photo.vivid">              vivid</div>
+            <div class="btn inactive" data-id="photo.scenes">             scenes</div>
+            <div class="btn inactive" data-id="photo.animals">            animals</div>
+            <div class="btn inactive" data-id="photo.contrast">           contrast</div>
+            <div class="btn inactive" data-id="photo.vehicles">           vehicles</div>
+            <div class="btn inactive" data-id="photo.lightlife">          lightlife</div>
+            <div class="btn inactive" data-id="photo.crownvictoria">      crownvictoria</div>
+            <div class="btn inactive" data-id="MADPIXELS">                madpixels</div>
             <div class="vspacing"></div>
-            <div class="btn inactive" data-id="composition.elements">     composition.elements</div>
-            <div class="btn inactive" data-id="composition.couleur">      composition.couleur</div>
-            <div class="btn inactive" data-id="composition.noir">         composition.noir</div>
-            <div class="vspacing"></div>
-            <div class="btn inactive" data-id="pixels.mad">               pixels.mad</div>
           </div>
           <div id="colors">
+            <div class="btn tag blue color" data-id="color.blue">
+              <div class="left"></div>
+              <div class="right"></div>
+            </div>
+            <div class="btn tag cyan color" data-id="color.cyan">
+              <div class="left"></div>
+              <div class="right"></div>
+            </div>
             <div class="btn tag green color" data-id="color.green">
               <div class="left"></div>
               <div class="right"></div>
@@ -74,19 +80,19 @@
               <div class="left"></div>
               <div class="right"></div>
             </div>
-            <div class="btn tag cyan color" data-id="color.cyan">
-              <div class="left"></div>
-              <div class="right"></div>
-            </div>
             <div class="btn tag yellow color" data-id="color.yellow">
               <div class="left"></div>
               <div class="right"></div>
             </div>
-            <div class="btn tag blue color" data-id="color.blue">
+            <div class="btn tag red color" data-id="color.pink">
               <div class="left"></div>
               <div class="right"></div>
             </div>
             <div class="btn tag pink color" data-id="color.pink">
+              <div class="left"></div>
+              <div class="right"></div>
+            </div>
+            <div class="btn tag black color" data-id="color.green">
               <div class="left"></div>
               <div class="right"></div>
             </div>
@@ -103,11 +109,18 @@
         //- ╔══════════════════════════════════════════╗
         //- ║                                          ║
         //- ╚══════════════════════════════════════════╝
-        
+        var base = 'https://dl.dropboxusercontent.com/u/233335115/images/laeh.io/sizes/300/';
         $wall = $('.wall')
-        for(var i = 0; i <100; i++) {
-            $box = $('<div>',
-            $box.appendTo($wall); {'class': 'box'});
+        for(var i = 1; i <17; i++) {
+            $box = $('<div>',{'class': 'box'});
+            $img = $('<div>',{'class': 'img'});
+            var url = base+i+'.jpg'
+            $img.css({
+                'background-image' : 'url(' + url + ')',
+            });
+            
+            $box.appendTo($wall);
+            $img.appendTo($box);
         }
         //- ╔══════════════════════════════════════════╗
         //- ║                                          ║
